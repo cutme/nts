@@ -1,0 +1,93 @@
+.o-hamburger {
+    @extend %anim;
+    @extend %flex;
+    @extend %flex-xy;
+    flex-shrink: 0;
+    width: 70px; height: 46px;
+    border: 1px solid #e8e8e8;
+    border-radius: 23px;
+    cursor: pointer;
+    
+    @media screen and ( max-width: $smartphone_portrait + px ) {
+        width: 50px;
+    }
+
+    i {
+        @extend %anim;
+        @extend %rel;
+        display: block;
+        width: 22px;
+        height: 14px;
+        border-top: 2px solid $c-black1;
+        
+        &:after, &:before {
+            @extend %abs;
+            @extend %abs-after;
+            @extend %anim;
+            left: 0;
+            width: 100%; height: 2px;
+            background-color: $c-black1;
+        }
+        
+        &:before {
+            @extend %abs-y;
+            margin-top: -1px;
+        }
+        
+        &:after {
+            bottom: 0;
+        }
+    }
+    
+    
+    &:hover {
+        background-color: $c-black1;
+        border-color: transparent;
+        color: white;
+        
+        
+        .navbar--base & {
+            .category & {
+                color: $c-black1;
+                background-color: white;
+            }
+        }
+        
+        .navbar--floating & {
+            .category & {
+                color: white;
+                background-color: $c-black1;
+            }
+        }
+        
+        i {
+            border-top-color: white;
+            
+            &:after, &:before {
+                background-color: white;
+            }
+        }
+    }
+    
+    &.is-active {
+        
+        i {
+            border: transparent;
+            
+            &:after {
+                display: none;
+            }
+            
+            //.category & {      
+             //   &:after, &:before {
+             //       background-color: white;
+             //   }
+          //  }
+        }
+    }
+    
+    @media screen and ( min-width: $large ) {
+        display: none;
+    }
+}
+

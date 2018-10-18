@@ -1,0 +1,29 @@
+.c-video {
+    max-width: 900px;
+    margin: 0 auto;
+
+    &__item {
+        @extend %rel;
+        max-width: 100%;
+        //overflow: hidden;
+        padding-bottom: 56.25%;
+        padding-top: 0;
+        height: auto;
+        /*
+background: {
+            image: url('../img/ajax-loader1.gif');
+            repeat: no-repeat;
+            position: center;
+            color: white;
+        }
+*/
+        
+        iframe {
+            @extend %abs;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.section-f {
+    background-color: #ededed;
+    padding-top: 73px;
+    text-align: center;
+
+    @media all and (min-width: $medium) {
+        padding-top: 123px;
+    }
+
+    @media all and (min-width: $large) {
+        padding-top: 173px;
+    }
+
+    .container-fluid {
+        margin: 0 auto;
+    }
+
+}
+

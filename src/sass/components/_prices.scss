@@ -1,0 +1,212 @@
+
+.c-prices {
+    @extend %flex;
+    
+    @media screen and ( max-width: $minmedium ) {
+        flex-wrap: wrap;
+    }
+    
+    br {
+        @media screen and ( max-width: $minmedium ) {
+            display: none;
+        }
+    }
+    
+    &__btn {
+        .limit {
+            margin-bottom: 20px;
+            font-size: rem(14);
+            color: $c-gray3;
+        }
+    }
+
+    &__item {
+        @extend %flex;
+        @extend %flex-wrap;
+        @extend %flex-spacebetween;
+        @extend %rel;
+        flex-direction: column;
+        width: 100%;
+        background-color: $c-gray4;
+        padding: 50px 25px 60px 25px;
+        
+        @media screen and ( min-width: $minlarge ) {
+            padding: 50px 45px 60px 45px;
+        }
+        
+        @media screen and ( min-width: $medium ) {
+            width: 33.33%;
+        }
+        
+        &--black {
+            background-color: $c-black2;
+            
+            @media screen and ( min-width: $medium ) {
+                padding-bottom: 0;
+            }
+            
+            h2 {
+                
+            }
+
+            .c-prices__profits {
+                li {
+                    color: $c-gray3;
+
+                    &:before {
+                        background-color: white;
+                        color: $c-black2;
+                    }
+                    
+                    &.plus {
+                        &:before {
+                            background-color: white;
+                            color: $c-black2;
+                        }
+                    }
+                }
+            }
+            
+            .o-header {
+                &__secondary {
+                    @media screen and ( min-width: $large ) {
+                        white-space: nowrap;
+                    }
+                }
+                color: white;
+            }
+            
+            .c-prices__price {
+                .circle {
+                    border-color: #555;
+                }
+            }
+           
+            .price {
+                color: white;
+            }
+
+            &:before, &:after {
+                @extend %abs;
+                @extend %abs-after;
+                left: 0;
+                width: 100%; height: 60px;
+                background-color: $c-black2;
+                
+                @media screen and ( max-width: $minmedium ) {
+                    display: none;
+                }
+            }
+            
+            &:before {
+                top: -40px;
+            }
+            
+            &:after {
+                bottom: -60px;
+            }
+        }
+    }
+    
+    &__price {
+        @extend %rel;
+        
+        .circle {
+            @extend %flex;
+            @extend %flex-wrap;
+            @extend %flex-xy;
+            flex-direction: column;
+            width: 160px; height: 160px;
+            margin: 0 auto 60px auto;
+            border: 1px solid #d2d2d2;
+            border-radius: 50%;
+            
+            span {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .price {
+                white-space: nowrap;
+                line-height: 1;
+                font-size: rem(47);
+                
+            }
+        }
+        
+        .sticker {
+            @extend %abs;
+            right: 0; top: 0;
+            white-space: nowrap;
+            transform: rotate(270deg);
+            transform-origin: right;
+            font: {
+                family: $adelle;
+                size: 14px;
+            }
+            color: $c-gray2;
+            
+            @media screen and ( min-width: $minlarge ) {
+                right: 10px;
+            }
+            
+
+            .green {
+                padding-left: 4px;
+                font-size: 18px;
+            }
+        }    
+    }
+    
+    &__profits {
+        margin-bottom: 80px;
+        
+        @media screen and ( max-width: $minmedium ) {
+            width: 50%;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        
+        @media screen and ( max-width: $small ) {
+            width: 100%;
+        }
+
+        li {
+            @extend %rel;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            text-align: left;
+            font-size: rem(14);
+            color: $c-gray3;
+            
+            @media screen and ( max-width: $minmedium ) {
+                width: 100%;
+            }
+            
+            &:before {
+                @extend %tick;
+                @extend %abs-x;
+                left: 0; top: 0;
+            }
+            
+            
+        }
+    }
+
+    .o-header {
+        text-align: center;
+        
+        .subtitle {
+            letter-spacing: 6px;
+            padding-bottom: 20px;
+        }
+    }
+    
+    .unit {
+        text-transform: uppercase;
+        font-size: rem(14);
+        color: $c-gray2;
+    }
+}

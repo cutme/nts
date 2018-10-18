@@ -1,0 +1,149 @@
+.section4b {
+    padding-top: 25px;
+    padding-bottom: 140px;
+    
+    @media all and (min-width: $large) {
+        padding-bottom: 220px;
+    }
+    
+    @media all and (min-width: $medium) {
+        padding-top: 50px;
+    }
+
+    h3 {
+        font-weight: 300;
+        font-family: $adelle;
+        text-align: center;
+        max-width: 810px;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 30px;
+        
+        @media all and (min-width: $medium) {
+            font-size: 24px;
+            line-height: 40px;
+        }
+        @media all and (min-width: $large) {
+            font-size: 30px;
+            line-height: 45px;
+        }
+    }
+    
+    .list {
+        list-style-type: none;
+        margin: 0;
+        padding: 68px 0 0 0;
+        @media all and (min-width: $large) {
+            padding: 168px 0 0 0;
+            margin: 0 30px;
+        }
+        &>li {
+            border-bottom: 1px solid #e8e8e8;
+        }
+        li>span {
+            display: block;
+            font-weight: 500;
+            font-size: 18px;
+            color: #a5a5a5;
+            padding: 37px 110px 38px 20px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s;
+            @media all and (min-width: $medium) {
+                font-size: 22px;
+                padding: 33px 110px 34px 40px;
+            }
+            @media all and (min-width: $large) {
+                font-size: 24px;
+            }
+            @media all and (min-width: $large) {
+                &:hover {
+                    .plus {
+                        &:after {
+                            opacity: 1;
+                        }
+                        &:before {
+                            border-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+        .active {
+            &>span {
+                box-shadow: 0 0 84px rgba(0, 0, 0, 0.06);
+                color: #1a1a1a;
+            }
+            .plus {
+                &:before {
+                    background: transparent url(../img/minus.png) no-repeat center;
+                }
+            }
+            ul {
+                display: block;
+            }
+        }
+        .plus {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            top: 31px;
+            right: 30px;
+            &:after {
+                content: " ";
+                position: absolute;
+                left: 0;
+                width: 45px;
+                height: 45px;
+                top: 0;
+                background: transparent url(../img/circle.png) no-repeat center;
+                opacity: 0;
+                transition: all 0.3s;
+            }
+            &:before {
+                content: " ";
+                background: transparent url(../img/plus.png) no-repeat center;
+                width: 45px;
+                height: 45px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border: 1px solid #e8e8e8;
+                border-radius: 30px;
+                transition: all 0.3s;
+            }
+        }
+        ul {
+            background-color: #f3f3f3;
+            display: none;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            font-weight: 300;
+            @media all and (min-width: $medium) {
+                font-size: 18px;
+            }
+            @media all and (min-width: $large) {
+                font-size: 21px;
+            }
+            li {
+                border-top: 1px solid #e8e8e8;
+                padding: 28px 15px 23px 15px;
+                @media all and (min-width: $medium) {
+                    padding: 38px 40px 33px 40px;
+                }
+                &:first-child {
+                    border-top-width: 0;
+                }
+                i {
+                    font-size: 14px;
+                    width: 20px;
+                    @media all and (min-width: $medium) {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

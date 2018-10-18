@@ -1,0 +1,10 @@
+.c-logo {
+    @extend %abs;
+    @extend %abs-xy;
+    width: 120px;
+    height: 20px;
+
+    img {
+        vertical-align: baseline;
+    }
+}

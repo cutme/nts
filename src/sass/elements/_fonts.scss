@@ -1,0 +1,10 @@
+@include font-face-db( 'Adelle Sans', 'AdelleSans-Light', $f-light);
+@include font-face-db( 'Adelle Sans', 'AdelleSans-SemiBold', $f-semibold);
+@include font-face-db( 'Adelle Sans', 'AdelleSans-Bold', $f-bold);
+@include font-face-db( 'Adelle Sans', 'AdelleSans', $f-regular);
+
+@include font-face-db( 'Tiempos Text', 'TiemposText-Regular', $f-regular);
+@include font-face-db( 'Tiempos Text', 'TiemposText-Bold', bold);
+@include font-face-db( 'Tiempos Text', 'TiemposHeadline-Medium', 500);
+
+@include font-face-db( 'icomoon', 'icomoon', $f-regular);

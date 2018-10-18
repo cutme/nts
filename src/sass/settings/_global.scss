@@ -1,0 +1,58 @@
+// Fonts
+
+$adelle:        'Adelle Sans', sans-serif;
+$tiempos:       'Tiempos Text', serif;
+$icons:         'icomoon';
+
+// Font weights
+
+$f-light:            300;
+$f-regular:          400;
+$f-medium:           500;
+$f-semibold:         600;
+$f-bold:             700;
+
+$text:	           $adelle;
+
+
+
+$z-index: (
+    apla:             1040,
+    navmenu:          1050,
+);
+
+
+
+// Default
+
+$base-font-size:	     18;
+$base:				   1140;
+
+
+
+// RWD
+
+$tablet:				991;
+$tablet_portrait:		768;
+$smartphone:			640;
+$smartphone_portrait:	375;
+
+
+
+// Klosinski variables
+
+
+$dark: #464646;
+$color: #B78677;
+$light: #F1E7E4;
+
+$extralarge:        1380px;
+$large1:            1260px;
+$large:             1050px;
+$minlarge:          1049px;
+$medium:            768px;
+$minmedium:         767px;
+$small:             480px;
+
+$thin: 0.5px;
+$wide: 6.7px;

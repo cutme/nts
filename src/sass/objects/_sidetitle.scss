@@ -1,0 +1,34 @@
+.o-sidetitle {
+    @extend %rel;
+    
+    &--left {
+        &:before {
+            left: -26px;
+            transform: rotate(270deg);
+        }
+    }
+    
+    &--right {
+        &:before {
+            right: -26px;
+            transform: rotate(270deg);
+        }
+    }
+    
+    &:before {
+        @extend %abs;
+        @extend %abs-after;
+        top: 5px;
+        letter-spacing: 3px;
+        font-size: rem(10);
+        text-transform: uppercase;
+        content: attr(data-sidetitle);
+        transform-origin: bottom;
+        color: $c-black2;
+        
+        @media screen and ( max-width: $minmedium ) {
+            display: none;
+        }
+        
+    }
+}

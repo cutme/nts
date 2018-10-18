@@ -1,0 +1,21 @@
+.c-social {
+
+    li {
+        display: inline-block;
+        margin: 0 7px;
+    }
+
+    a {
+        @extend %anim;
+        @extend %flex;
+        @extend %flex-xy;
+        width: 45px;
+        height: 45px;
+        border: 1px solid #d8d8d8;
+        border-radius: 50%;
+        font-size: rem(12);
+        color: $c-black2;
+        
+        
+    }
+}

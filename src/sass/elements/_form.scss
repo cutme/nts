@@ -1,0 +1,126 @@
+button, input, textarea {
+	background-color: transparent;
+	border: none;
+	border-color: inherit;
+	border-radius: 0;
+	font-family: $text;
+}
+
+button {
+	cursor: pointer;
+}
+
+input, textarea {
+    //-webkit-appearance: none;
+    //-moz-appearance: none;
+	text-rendering: optimizeLegibility; 
+	/*
+font: {
+		family: $text;
+		size: rem(14);
+	}
+*/
+	cursor: text;
+}
+
+input {
+	&[disabled],
+	&[readonly] {
+		opacity: .5;
+	}
+}
+
+input[type=checkbox] {
+    display: block;
+    margin: 0;
+    cursor: pointer;
+}
+
+input {
+	&[type=text],
+	&[type=email],
+	&[type=tel] {
+		width: 100%;
+	}
+}
+
+textarea {
+    width: 100%;
+	resize: none;
+	overflow: auto;
+}
+
+:invalid {
+  box-shadow: none;
+}
+
+:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+:-moz-ui-invalid {
+  box-shadow:none;
+}
+
+::-webkit-input-placeholder {color: inherit;}
+:-moz-placeholder {color: inherit; }
+::-moz-placeholder {color: inherit; }
+:-ms-input-placeholder { color: inherit; }
+
+
+
+input, select, textarea, button { font-family: $tiempos; font-size: 16px; color: $color; resize: none; }
+input:focus, select:focus, textarea:focus,  button:focus, a:focus, a:active { outline: none !important; }
+input[type=text], input[type=password], input[type=submit], input[type=button], input[type=email], input[type=number], input[type=tel], textarea { -webkit-appearance: none; }
+
+
+
+/*
+ * Checkbox
+ */
+/*
+
+input[type=checkbox] {
+    display: none;
+    
+    & + label {
+        @extend %flex;
+        cursor: pointer;
+
+        i {
+            @extend %rel;
+            flex-shrink: 0;
+            height: 12px;
+            width: 12px;
+            background-color: white;
+            display: inline-block;
+            border-radius: 2px;
+            border: 1px solid #95989A;
+            cursor: pointer;
+            
+            &:after {
+                @extend %abs;
+                @extend %abs-after;
+                left: 1px; top: -4px;
+                font-size: rem(16);
+                content: '✓';
+                opacity: 0;
+            }
+        }
+
+        span {
+            padding-left: 10px;
+        }
+    }
+    
+    &:checked {
+        & + label {
+            i {
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+*/

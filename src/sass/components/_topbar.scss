@@ -1,0 +1,51 @@
+.c-topbar {
+    @extend %flex;
+    @extend %flex-spacebetween;
+    @extend %flex-y;
+    position: fixed;
+    left: 0; top: 0; z-index: 50;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    padding: 0 40px;
+    border-bottom: 1px solid $c-gray6;
+    
+    @media screen and ( max-width: $medium ) {
+        padding: 0 15px;
+    }
+
+    .c-logo {
+        width: 120px; height: 20px;
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        @media screen and ( max-width: $smartphone_portrait + px ) {
+            width: 80px;
+        }
+    }
+    
+    .o-btn {
+        width: 160px; height: 50px;
+        font-size: rem(12);
+        
+        @media screen and ( max-width: $medium ) {
+            width: 120px;
+        }
+        
+        @media screen and ( max-width: $small ) {
+            width: 100px;
+        }
+        
+        @media screen and ( max-width: $smartphone_portrait + px ) {
+            width: auto;
+            height: 30px;
+            padding: 0 10px;
+            font-size: rem(9);
+        }
+        
+        
+    }
+}

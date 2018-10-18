@@ -1,0 +1,153 @@
+.c-inside {
+    @extend %rel;
+    //max-width: 1200px;
+    background-color: #f3f3f3;
+    margin: 0 auto;
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__description {
+        min-height: 100px;
+        
+        @media screen and ( min-width: $medium ) {
+            min-height: 130px;
+        }
+        
+        @media screen and ( max-width: $minmedium ) {
+            padding: 0 20px;
+        }
+        
+        p {
+            font-size: rem(18);
+        }
+    }
+    
+    &__num {
+        @extend %flex;
+        @extend %flex-xy;
+        width: 90px; height: 90px;
+        border: 1px solid #808080;
+        border-radius: 50%;
+        margin: 0 auto 40px auto;
+        font-size: rem(24);
+        color: #181818;
+        
+        @media screen and ( min-width: $large ) {
+            margin-bottom: 70px;
+        }
+        
+        @media screen and ( max-width: $minmedium ) {
+            width: 70px; height: 70px;
+        }
+    }
+    
+    &__pagination {
+        @extend %flex;
+        @extend %flex-xy;
+        
+        @media screen and ( max-width: $minmedium ) {
+            margin-bottom: 20px;
+        }
+
+        .arrow {
+            @extend %anim;
+            @extend %flex-xy;
+            display: inline-flex;
+            width: 30px; height: 30px;
+            border: 1px solid #808080;
+            border-radius: 50%;
+            font-size: rem(11);
+            cursor: pointer;
+
+            &:hover {
+//                border-color: darken(#808080, 10%);
+                background-color: white;
+            }
+            
+            &.slick-prev {
+                &:hover {
+                    transform: translate3d(-2px, 0, 0);                    
+                }
+            }
+            
+            &.slick-next {
+                &:hover {
+                    transform: translate3d(2px, 0, 0);                    
+                }
+            }
+        }
+        
+        .dots {
+            margin: 0 20px;
+        }
+        
+        .slick-dots {
+            @extend %flex;
+
+            li {
+                margin: 0 4px;
+
+                &.slick-active {
+                    i {
+                        background-color: #181818;
+                    }
+                }
+            }
+            
+            i {
+                display: inline-block;
+                width: 10px; height: 10px;
+                border-radius: 50%;
+                border: 1px solid #181818;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    &__text {
+        @extend %flex-wrap;
+        flex-direction: column;
+        justify-content: center;        
+        
+        @media screen and ( min-width: $medium ) {
+            position: absolute;
+            z-index: 10;
+            left: grid(45, 1200); top: 0;
+            display: flex;
+            width: grid(400, 1200);
+            height: 100%;
+        }
+        
+        @media screen and ( min-width: $large ) {
+            left: grid(55, 1200); top: 0;
+            width: grid(360, 1200);
+        }
+        
+        @media screen and ( max-width: $minmedium ) {
+            padding-top: 40px;
+        }
+        
+        p {
+            font-size: rem(16);
+            color: #595959;
+            
+            @media screen and ( min-width: $large ) {
+                font-size: rem(18);
+            }
+        }
+    }
+    
+    .o-header__third {
+        margin-bottom: .6em;
+    }
+       
+    
+    
+    &:before {
+        top: 25px;
+        left: -50px;
+    }
+}

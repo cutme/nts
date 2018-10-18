@@ -1,0 +1,16 @@
+.section-j {
+    padding-top: 73px;
+    padding-bottom: 130px;
+    text-align: center;
+
+    @media all and (min-width: $medium) {
+        padding-top: 123px;
+        padding-bottom: 250px;
+    }
+
+    @media all and (min-width: $large) {
+        padding-top: 173px;
+        
+    }
+}
+

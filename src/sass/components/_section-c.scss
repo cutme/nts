@@ -1,0 +1,27 @@
+.section-c {
+    background-color: $c-gray4;
+    padding-top: 73px;
+    text-align: center;
+
+    @media all and (min-width: $medium) {
+        padding-top: 123px;
+    }
+
+    @media all and (min-width: $large) {
+        padding-top: 173px;
+    }
+    
+    .o-header {
+         padding: {
+            left: 20px;
+            right: 20px;
+        }
+    }
+
+    .c-video {
+        @media all and (min-width: $medium) {
+            margin-top: -280px;
+            transform: translate3d(0, 50%, 0);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.section-a {
+    padding: {
+        bottom: 30px;
+        top: 123px;
+    }
+
+    @media all and (min-width: $large) {
+        padding: {
+            top: 173px;
+        }
+    }    
+}

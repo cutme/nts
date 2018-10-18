@@ -1,0 +1,59 @@
+.c-steps {
+    @extend %flex;
+    @extend %rel;
+    max-width: $base + px;
+    padding-top: 90px;
+    
+    @media screen and ( max-width: $medium ) {
+        flex-wrap: wrap;
+    }
+    
+    &:before {
+        @extend %abs;
+        @extend %abs-after;
+        @extend %abs-x;
+        top: -10px;
+        width: grid(760);
+        height: 1px;
+        background-color: $c-gray7; 
+        
+        @media screen and ( max-width: $medium ) {
+            display: none;
+        }       
+    }
+
+    &__item {
+        @extend %rel;
+        width: 33%;
+        padding: 0 20px;
+        
+        @media screen and ( max-width: $medium ) {
+            width: 100%;
+            
+            
+            &:not(:last-of-type) {
+                margin-bottom: 150px;
+            }
+        }
+        
+        
+        &:after {
+            @extend %abs;
+            @extend %abs-x;
+            @extend %flex;
+            @extend %flex-xy;
+            top: -140px;
+            width: 76px; height: 76px;
+            background-color: white;
+            border: 1px solid $c-gray7;
+            border-radius: 50%;
+            font-weight: $f-light;
+            content: attr(data-num);
+            color: $c-gray8;
+            
+            @media screen and ( max-width: $medium ) {
+                top: -110px;
+            }
+        }
+    }
+}

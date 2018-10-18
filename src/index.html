@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="pl">
+<head>
+    <%= require('html-loader?minimize=false!./includes/head.html') %>
+</head>
+
+<body>
+    
+<div id="all"><div id="all-inner">
+
+	<div class="c-topbar">
+	    <div class="o-hamburger js-open-navmenu"><i></i></div>
+
+	    <nav class="c-nav">
+	        <ul>
+    	        <%= require('html-loader?minimize=false!./includes/nav.html') %>
+	        </ul>
+    	</nav>
+    	
+    	<div class="c-logo">
+    	    <img src=<%= require("./img/logo-nts.svg") %> width="120" height="20" alt="N/T/S">
+    	</div>
+    	
+    	<div class="c-topbar__cta">
+    	    <a href="#prices" class="o-btn o-btn--black js-goto">Kup teraz</a>
+    	</div>
+    </div>
+
+
+    <div class="c-header">
+        <header class="o-header">        
+            <h1 class="o-header__primary">
+                Notesy, które zamieniają<br>
+                plan w&nbsp;działanie
+            </h1>
+        </header>
+        
+        <div class="c-header__buttons">
+            <a href="#prices" class="o-btn o-btn--black js-goto">Kup teraz</a>
+            <a href="#prices" class="o-btn o-btn--white js-goto"><i class="u-play"></i> Zobacz szczegóły</a>
+        </div>
+    </div>
+    
+    
+    <section class="content-section">
+        <div class="section-a" id="about" data-offset="80">
+            <div class="container-fluid">
+
+                <header class="o-header">
+                    <h2 class="o-header__secondary">
+                        Tworzenie planów nie jest trudne.<br> 
+                        Prawdziwe wyzwanie to ich realizacja.
+                    </h2>
+                    
+                    <h3 class="o-header__fourth">
+Rozpisujesz cele i zaczynasz działać. Na początku idzie Ci nieźle, ale nagle coś wybija Cię z rytmu, a plany zostają jedynie kilkoma zdaniami na papierze. Brzmi znajomo, prawda?
+                    </h3>
+                </header>                
+
+            </div>
+        </div>
+        
+        
+        <div class="section-b">
+            <div class="container-fluid">
+                <div class="col-right">
+                
+                    <div class="normal-text">
+                        <p>
+Ja też miałem z tym problem. Od zawsze musiałem sam organizować sobie pracę i sam się z niej rozliczać. Wiedziałem, że warto znać swój cel i zaplanować jego realizację, ale wkoło czekało tyle pilnych spraw, że szybko wracałem do złych nawyków, a plan znikał z pola widzenia. 
+                        </p>
+
+                        <p>
+Zdałem sobie sprawę, że problem nie leży w złym określaniu celu. Przegrywałem kiedy traciłem kontrolę i przestawałem panować nad sytuacją. Zrozumiałem, że kluczem do walki z chaosem jest dobry rytm. Tylko jak go znaleźć i utrzymać?
+                        </p>
+
+                        <p>
+Zacząłem czytać badania i podpatrywać jak robią to ci, których osiągnięcia podziwiamy. Znalazłem sposób na krótkie, codzienne podsumowania, które pomagają trzymać się priorytetów i zachować motywację. Okazało się, że nie jest potrzebna tajemna wiedza i specjalistyczna technologia. Odpowiedzią jest znana od setek lat idea własnego dziennika, prowadzonego w odpowiedni sposób. Na te potrzeby stworzyłem specjalny notes i teraz chcę go udostępnić także Tobie.
+                        </p>
+                    </div>
+                </div>
+                
+                <aside class="col-left">
+                    <div class="photo o-sidetitle" data-sidetitle="Kim jestem">
+                        <img src=<%= require('./img/author.jpg') %> alt="" class="anim anim--fadein">
+                    </div>
+        
+                    <h3>Jacek Kłosiński</h3>
+    
+                    <div class="small-text">
+                        <p>
+Pomagam w kreatywnej pracy.
+                        </p>
+                        
+                        <p>
+Nigdy nie pracowałem na etacie. Od kilkunastu lat działam na własny rachunek – najpierw jako freelancer, później właściciel własnej agencji, a obecnie jako bloger, twórca szkoleń i wykładowca.
+                        </p>
+
+                        <p>
+    Więcej o mnie znajdziesz na <a href="//klosinski.net" target="_blank" rel="noopener">klosinski.net</a>
+                        </p>
+                    </div>
+
+                    <ul class="c-social">
+                        <li>
+                            <a href="https://www.facebook.com/j.klosinski/" class="icon-facebook" target="_blank" rel="noopener"></a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.instagram.com/jklosinski/" class="icon-instagram" target="_blank" rel="noopener"></a>
+                        </li>
+                    </ul>
+                </aside>     
+            </div>
+        </div>
+        
+        
+        <div class="section-c" id="method" data-offset="80">
+            <div class="container-fluid">
+
+                <header class="o-header">
+                    <h2 class="o-header__secondary">
+                        Dlaczego stworzyłem<br>
+                        własne notesy
+                    </h2>
+
+                    <h3 class="o-header__fourth">
+                        Zobacz krótki materiał video, w którym <br>
+                        opowiadam o najważniejszych szczegółach.
+                    </h3>
+                </header>                
+
+                <div class="c-video">
+                    <div class="c-video__item o-sidetitle o-sidetitle--left" data-sidetitle="Video">
+                        <iframe 
+                            width="500" height="281" 
+                            src="https://www.youtube.com/embed/qGo3BETCYbY?feature=oembed&amp;showinfo=0" allow="autoplay; encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="section-d">
+            <div class="container-fluid">
+
+                <header class="o-header">
+                    <h2 class="o-header__secondary">
+                        Jak to działa
+                    </h2>
+
+                    <h3 class="o-header__fourth">
+                        Cały urok tej metody polega na tym, że jest prosta i naturalna,<br> 
+                        ale jednocześnie bardzo skuteczna.
+                    </h3>
+                </header>                
+
+                
+                <div class="c-steps">
+                    <div class="c-steps__item" data-num="1">
+                        <h4 class="o-header__third">Wypełnij</h4>
+                        
+                        <p>
+Codziennie poświęcasz kilka minut 
+na&nbsp;wypełnienie specjalnych rubryk 
+w&nbsp;stałym rozkładzie dnia.
+                        </p>
+                    </div>
+                    
+                    <div class="c-steps__item" data-num="2">
+                        <h4 class="o-header__third">Wracaj</h4>
+                        
+                        <p>
+Regularnie wracasz do swoich 
+notatek, wyciągasz wnioski 
+i&nbsp;kontrolujesz postępy.
+                        </p>
+                    </div>
+                    
+                    <div class="c-steps__item" data-num="3">
+                        <h4 class="o-header__third">Trzymaj</h4>
+                        
+                        <p>
+Notes masz zawsze pod ręką 
+i&nbsp;traktujesz jako koło ratunkowe, 
+które pomaga trzymać się planów.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="section-e">
+            <header class="o-header">
+                <h3 class="o-header__fourth">
+                    Sekret tkwi w szczegółach. Długo szukałem idealnego notesu,<br> 
+                    który będzie pasował do tych potrzeb. <br>
+                    W&nbsp;końcu zrobiłem swój. Zobacz co go wyróżnia.
+                </h3>
+            </header>                
+
+            
+            <ul class="c-details">
+                <li class="c-details__item">
+                    <figure>
+                        <div class="o-sidetitle o-sidetitle--left" data-sidetitle="Detale">
+                            <img src=<%= require("./img/details-1.jpg") %> alt="" width="800" height="450" class="anim anim--fadein">
+                        </div>
+
+                        <figcaption>
+                            <h4 class="o-header__third">Design</h4>
+                    
+                            <p>
+                                minimalistyczny styl<br>
+                                neutralne kolory<br>
+                                delikatne tłoczenia
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                
+                <li class="c-details__item">
+                    <figure>
+                        <div class="o-sidetitle o-sidetitle--right" data-sidetitle="Detale">
+                            <img src=<%= require("./img/details-2.jpg") %> alt="" width="800" height="450" class="anim anim--fadein">
+                        </div>
+
+                        <figcaption>
+                            <h4 class="o-header__third">Wygoda</h4>
+                    
+                            <p>
+                                łatwe rozkładanie na płasko<br>
+                                szycie z otwartym grzbietem<br>
+                                poręczny format
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                
+                <li class="c-details__item">
+                    <figure>
+                        <div class="o-sidetitle o-sidetitle--left" data-sidetitle="Detale">
+                            <img src=<%= require("./img/details-3.jpg") %> alt="" width="800" height="450" class="anim anim--fadein">
+                        </div>
+                        
+                        <figcaption>
+                            <h4 class="o-header__third">Papier</h4>
+                    
+                            <p>
+                                wysokiej jakości papier bezdrzewny<br>
+                                gramatura środka aż 120 g/m²<br>
+                                kolor neutralny dla oczu<br>
+                                dopasowany do piór i długopisów
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="section-f">
+            <div class="container-fluid">
+
+                <header class="o-header">
+                    <h2 class="o-header__secondary">
+                        Kilka liczb
+                    </h2>
+
+                    <h3 class="o-header__fourth">
+                        Proste projekty muszą być przemyślane w każdym detalu.<br> 
+                        Żadnego parametru nie zostawiliśmy przypadkowi.
+                    </h3>
+                </header>                
+
+                <div class="c-numbers">
+                    <div class="c-numbers__col c-numbers__col--left">
+                        <p data-num="168">stron</p>
+                        <p data-num="12">tygodni</p>
+                        <p data-num="120">gramatura papieru</p>
+                    </div>
+                    
+                    <div class="c-numbers__col c-numbers__col--right">
+                        <p data-num="15">centymetrów wysokości</p>
+                        <p data-num="20">centymetrów szerokości</p>
+                        <p data-num="598">gramów wagi</p>
+                    </div>
+                
+                    <div class="c-numbers__image">
+                        <img src=<%= require("./img/numbers.jpg") %> alt="" width="750" height="668" class="anim anim--fadein">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="section-g">
+            
+            <header class="o-header">
+                <h2 class="o-header__secondary">
+                    Zajrzyj do środka
+                </h2>
+
+                <h3 class="o-header__fourth">
+                    Ta metoda to połączenie moderowanego dziennika <br>
+                    ze swobodą i przestrzenią na dowolne notatki. <br>
+                    Zobacz co znajdziesz w środku.
+                </h3>
+            </header>                
+
+            <div class="c-inside o-sidetitle o-sidetitle--left" data-sidetitle="Od środka">
+                
+                <div class="c-inside__text">
+                
+                    <div class="c-inside__num js-slideNum">1</div>
+                
+                    <div class="slider js-slider-nav">
+                        <div>
+                            <h4 class="o-header__third">Dzień tematyczny</h4>
+                            
+                            <div class="c-inside__description">
+                                <p>
+                                    Potrzebujesz nawyków, motywacji i&nbsp;nastawiania. Musisz złapać<br>
+                                    dobry rytm i&nbsp;się go trzymać.
+                                </p>
+                            </div>                        
+                        </div>
+                        
+                        <div>
+                            <h4 class="o-header__third">Dzień tematyczny</h4>
+                            
+                            <div class="c-inside__description">
+                                <p>
+                                    Potrzebujesz nawyków, motywacji i&nbsp;nastawiania. Musisz złapać<br>
+                                    dobry rytm i&nbsp;się go trzymać.
+                                </p>
+                            </div>                        
+                        </div>
+                    </div>
+                    
+                    <div class="c-inside__pagination">
+                        <div class="arrow icon-arrow-left prev"></div>
+                        
+                        <div class="dots" id="insideDots"></div>
+                        
+                        <div class="arrow icon-arrow-right next"></div>
+                    </div>
+                </div>
+                
+                <div class="slider js-slider fade">
+				    <img src=<%= require("./img/inside-1.jpg") %> alt="" width="1200" height="865">
+				    <img src=<%= require("./img/inside-2.jpg") %> alt="" width="1200" height="865">
+                </div>                
+            </div>
+        </div>
+
+
+        <div class="section-h" id="nts" data-offset="80">
+            
+            <header class="o-header">
+                <h2 class="o-header__secondary">
+                    Wszystko Ci wyjaśnię
+                </h2>
+
+                <h3 class="o-header__fourth">
+                    Do notesu dołączona jest instrukcja. Dowiesz się jak prowadzić<br> 
+                    swój dziennik i poznasz szerszy kontekst każdego elementu. To <br>
+                    mini książeczka pełna ciekawostek i&nbsp;rad pomagających skutecznie <br>
+                    realizować swoje plany.
+                </h3>
+            </header>                
+
+            <div class="c-instruction c-instruction--instruction">
+                
+                <div class="c-instruction__col c-instruction__col--left o-sidetitle o-sidetitle--left" data-sidetitle="Instrukcja">
+                    <img src=<%= require("./img/instruction-1.jpg") %> alt="" width="480" height="730" class="anim anim--fadein">
+                </div>
+                
+                
+                
+                <div class="c-instruction__col c-instruction__col--right o-sidetitle o-sidetitle--left" data-sidetitle="Instrukcja">
+                    <img src=<%= require("./img/instruction-2.jpg") %> alt="" width="480" height="630" class="anim anim--fadein">
+                </div>                
+                
+                <div class="c-instruction__info c-instruction__info--abs">
+                    <h4 class="o-header__third">Sprawdzona metoda</h4>
+
+                    <p>
+Opieram się na badaniach naukowych 
+i&nbsp;metodach znanych twórców. 
+Przeanalizowałem setki materiałów 
+i&nbsp;przetestowałem różne warianty. 
+Opowiem Ci o&nbsp;wnioskach.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section-i" id="variants" data-offset="80">
+            
+            <header class="o-header">
+                <h2 class="o-header__secondary">
+                    Dwie wersje
+                </h2>
+
+                <h3 class="o-header__fourth">
+Podoba Ci się notes, ale wolisz mieć pełną dowolność<br> 
+i nie chcesz korzystać z mojej metody? Nie ma problemu,<br> 
+przygotowałem też wersję bez zadruku, instrukcji i schematów.
+                </h3>
+            </header>                
+
+            <div class="c-instruction c-instruction--version c-instruction--center">
+                
+                <div class="c-instruction__col c-instruction__col--left o-sidetitle o-sidetitle--left" data-sidetitle="N/T/S Daily">
+                    <img src=<%= require("./img/version-1.jpg") %> alt="" width="460" height="350" class="anim anim--fadein">
+                    
+                    <div class="c-instruction__info">
+                        <h4 class="o-header__third">Daily</h4>
+    
+                        <p>
+Jeśli chcesz wykorzystać moją<br> 
+metodę, skorzystać z zaplanowanych <br>
+rubryk i instrukcji, ale mieć też <br>
+miejsce na własne notatki.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <div class="c-instruction__col c-instruction__col--right o-sidetitle o-sidetitle--left" data-sidetitle="N/T/S Plain">
+                    <img src=<%= require("./img/version-2.jpg") %> alt="" width="460" height="350" class="anim anim--fadein">
+                    
+                    <div class="c-instruction__info">
+                        <h4 class="o-header__third">Plain</h4>
+    
+                        <p>
+Jeśli chcesz mieć pełną dowolność <br>
+i swobodę, nie potrzebujesz konkretnych <br>
+rubryk ani mojej metody. <br>
+Zadruk w delikatne kropki. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="section-j" id="prices" data-offset="80">
+            <div class="container-fluid">
+            <header class="o-header">
+                <h2 class="o-header__secondary">
+                    Zamów w przedsprzedaży
+                </h2>
+
+                <h3 class="o-header__fourth">
+Jeśli złożysz zamówienie w przedsprzedaży, wysyłka jest<br> 
+darmowa! Notesy będą gotowe w pierwszym tygodniu grudnia.
+                </h3>
+            </header>
+        
+            <ul class="c-prices">
+                <li class="c-prices__item">
+                    <div class="c-prielist__content">
+                        <header class="o-header">
+                            <p class="subtitle">N/T/S</p>
+        
+                            <h2 class="o-header__secondary">Daily</h2>
+                        </header>
+                        
+                        <div class="c-prices__price">
+                            <div class="circle">
+                                <span class="price">89</span>
+                                <span class="unit">zł</span>
+                            </div>
+                        </div>
+                    
+                        <ul class="c-prices__profits">
+                            <li>
+Papierowa instrukcja z opisem<br> 
+mojej metody prowadzenia dziennika
+                            </li>
+                            
+                            <li>
+Szary notes na 12 tygodni<br> 
+(rubryki dziennika plus miejsce<br> 
+na własne notatki)
+                            </li>
+                            
+                            <li>
+Zapakowany na prezent
+                            </li>
+                            
+                            <li>
+Darmowa wysyłka<br> 
+w&nbsp;przedsprzedaży (Pocztex48)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="c-prices__btn">
+                        <a href="#" class="o-btn o-btn--white">Kup N/T/S Daily</a>
+                    </div>
+                </li>
+                
+                <li class="c-prices__item c-prices__item--black">
+                    <div class="c-prielist__content">
+                        <header class="o-header">
+                            <p class="subtitle">N/T/S</p>
+        
+                            <h2 class="o-header__secondary">Daily &amp;&nbsp;Plain</h2>
+                        </header>
+                        
+                        <div class="c-prices__price">
+                            <div class="circle">
+                                <span class="price">159</span>
+                                <span class="unit">zł</span>
+                            </div>                           
+                        </div>
+                        
+                        <ul class="c-prices__profits">
+                            <li>
+Papierowa instrukcja z opisem<br> 
+mojej metody prowadzenia dziennika
+                            </li>
+                            
+                            <li>
+Szary notes na 12 tygodni<br> 
+(rubryki dziennika plus miejsce<br> 
+na własne notatki)
+                            </li>
+
+                            <li>
+Czarny notes, 168 stron<br>
+(bez rubryk, bez instrukcji, <br>
+zadruk w kropki)
+                            </li>
+                            
+                            <li>
+Zapakowany na prezent
+                            </li>
+                            
+                            <li>
+Darmowa wysyłka<br> 
+w&nbsp;przedsprzedaży (Pocztex48)
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="c-prices__btn">
+                        <a href="#" class="o-btn o-btn--white o-btn--outline">Kup pakiet</a>
+                    </div>
+                </li>
+                
+                <li class="c-prices__item">
+                    <div class="c-prielist__content">
+                        <header class="o-header">
+                            <p class="subtitle">N/T/S</p>
+        
+                            <h2 class="o-header__secondary">Plain</h2>
+                        </header>
+                        
+                        <p class="c-prices__old">&nbsp;</p>
+                        
+                        <div class="c-prices__price">
+                            <div class="circle">
+                                <span class="price">69</span>
+                                <span class="unit">zł</span>
+                            </div>
+                        </div>
+                        
+                        <ul class="c-prices__profits">
+                            <li>
+Czarny notes, 168 stron<br>
+(bez rubryk, bez instrukcji, <br>
+zadruk w kropki)
+                            </li>
+                            
+                            <li>
+Zapakowany na prezent
+                            </li>
+                            
+                            <li>
+Darmowa wysyłka<br> 
+w&nbsp;przedsprzedaży (Pocztex48)
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="c-prices__btn">
+                        <a href="#" class="o-btn o-btn--white">Kup N/T/S Plain</a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+
+        <div class="section-k js-faq">
+            <div class="container-fluid">
+                <div class="columns">
+                    <div class="col-left">
+                                            
+                        <h2>Często<br> zadawane pytania</h2>
+                        
+                        <ul class="list">
+                            <li class="open">
+                                <h3>Czy otrzymam fakturę VAT? <span class="plus"></span></h3>
+        
+                                <div class="response">
+                                    <p>Tak, oczywiście. Pamiętaj tylko, żeby podać dane przy zakupie kursu. Zakup kursu możesz wpisać w&nbsp;koszty, dzięki temu będzie on dla Ciebie dużo tańszy.</p>
+                                </div>
+                            </li>
+                        
+                            <li>
+                                <h3>Na jak długo mam dostęp do kursu? <span class="plus"></span></h3>
+                                
+                                <div class="response">
+                                    <p>W wersji premium nie ma ograniczeń czasowych. W&nbsp;wersji regular otrzymujesz dostęp na 12 miesięcy.</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <h3>Jaką formę ma kurs? <span class="plus"></span></h3>
+        
+                                <div class="response">
+                                    <p>Kurs jest w formie video. Do każdej lekcji są też notatki tekstowe, jest sporo ćwiczeń i interaktywnych formularzy podusmowujących</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <h3>Czy kurs mogę zgrać sobie na komputer? <span class="plus"></span></h3>
+        
+                                <div class="response">
+                                    <p>Nie, kurs jest dostępny jedynie poprzez platformę kursową.</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <h3>Czy od razu dostaję dostęp do całego kursu? <span class="plus"></span></h3>
+        
+                                <div class="response">
+                                    <p>Tak, cały materiał jest dostępny od razu, ale przejście do kolejnej lekcji wymaga ukończenia poprzedniej.</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <h3>W jaki sposób otrzymam dostęp? <span class="plus"></span></h3>
+        
+                                <div class="response">
+                                    <p>Po opłaceniu kursu, dane do logowania prześlę Ci od razu mailem. Dostęp do treści będzie natychmiastowy.</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <h3>Czy jest możliwość płatności w&nbsp;ratach? <span class="plus"></span></h3>
+        
+                                <div class="response">
+                                    <p>Aktualnie nie ma takiej możliwości.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <div class="col-right">
+                        <div class="can-fixed">
+                            
+                            <h2>Nadal nie masz<br> pewności?</h2>
+                            
+                            <p class="photo">
+                                <img src=<%= require('./img/avatar.png') %> alt="">
+                            </p>
+
+                            <p>
+                                Jeśli nadal zastanawiasz się,
+                                czy te notesy są dla Ciebie,
+                                napisz do mnie i opisz swoje
+                                wątpliwości
+                            </p>
+        
+                            <p>
+                                <a href="#" class="btn">POSTARAM SIĘ DORADZIĆ</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <div class="c-footer">
+    
+        <div class="c-footer__logo">
+            <img src=<%= require("./img/logo-klosinski.svg") %> alt="Kłosiński" width="132" height="20">
+        </div>
+        
+        <div class="c-footer__copy">
+            &copy;2018 Jacek Kłosiński – klosinski.net All rights reserved. 
+        </div>
+    
+        <ul class="c-social">
+            <li>
+                <a href="https://www.facebook.com/j.klosinski/" class="icon-facebook" target="_blank" rel="noopener"></a>
+            </li>
+            
+            <li>
+                <a href="https://www.instagram.com/jklosinski/" class="icon-instagram" target="_blank" rel="noopener"></a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="popup-outer" id="contact-popup">
+      <div class="popup-inner">
+        <button class="button-close"><span>Zamknij</span></button>
+        <p class="subtitle">ZADAJ PYTANIE</p>
+        <h2>Postaram się doradzić</h2>
+        <form action="#" method="post" class="form">
+          
+          <fieldset>
+                        <input type="hidden" name="action" value="sendpopup">
+            <input type="hidden" name="tokenid" value="aca6b974456fa116">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="popupName">Imię</label>
+                  <input type="text" id="popupName" name="name" class="form-control" value="">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="popupSurName">Nazwisko</label>
+                  <input type="text" id="popupSurName" name="surname" class="form-control" value="">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="popupEmail">Adres e-mail</label>
+              <input type="email" id="popupEmail" name="email" class="form-control" value="">
+            </div>
+            <div class="form-group">
+              <label for="popupMessage">Treść</label>
+              <textarea id="popupMessage" name="message" class="form-control"></textarea>
+            </div>
+            <p class="button">
+              <button type="submit" class="btn">WYŚLIJ</button>
+            </p>
+                      </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div class="layer-popup"></div>
+
+</div></div>
+
+
+<div class="c-navmenu js-navmenu">
+    <div class="c-navmenu__content">
+
+        <ul class="c-navmenu__pages">
+            <%= require('html-loader?minimize=false!./includes/nav.html') %>
+        </ul>
+            
+        <div class="o-hamburger is-active js-close-navmenu">
+            <i></i>
+        </div>
+    </div>
+</div>
+
+<div class="c-apla js-apla"></div>
+
+
+
+</body>
+</html>

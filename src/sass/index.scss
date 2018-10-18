@@ -1,0 +1,57 @@
+@import 'settings/colors.scss';
+@import 'settings/global.scss';
+
+@import 'tools/clear';
+@import 'tools/functions';
+@import 'tools/mixins';
+@import 'tools/anims';
+
+@import 'generic/reset';
+@import 'generic/box-sizing';
+
+@import 'elements/extends';
+@import 'elements/fonts';
+@import 'elements/form';
+@import 'elements/page';
+@import 'elements/typography';
+
+@import 'objects/btn';
+@import 'objects/hamburger';
+@import 'objects/header';
+@import 'objects/icons';
+@import 'objects/lpmain';
+@import 'objects/sidetitle';
+@import 'objects/wrap';
+
+@import 'components/footer';
+@import 'components/header';
+
+@import 'components/navbar';
+@import 'components/popup-outer';
+@import 'components/section-a';
+@import 'components/section-b';
+@import 'components/section-c';
+@import 'components/section-d';
+@import 'components/section-e';
+@import 'components/section-f';
+@import 'components/section-g';
+@import 'components/section-h';
+@import 'components/section-i';
+@import 'components/section-j';
+@import 'components/section-k';
+
+@import 'components/apla';
+@import 'components/details';
+@import 'components/inside';
+@import 'components/instruction';
+@import 'components/logo';
+@import 'components/nav';
+@import 'components/navmenu';
+@import 'components/numbers';
+@import 'components/prices';
+@import 'components/topbar';
+@import 'components/social';
+@import 'components/steps';
+@import 'components/video';
+
+@import 'trumps/trumps';

@@ -1,0 +1,105 @@
+.section5 {
+    background: #1a1a1a url(../img/bg2.png) no-repeat center;
+    background-size: cover;
+    color: white;
+    padding-bottom: 82px;
+    padding-top: 73px;
+    
+    @media all and (min-width: $medium) {
+        padding-bottom: 182px;
+        padding-top: 173px;
+    }
+    
+  /*
+  .subtitle {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+*/
+    
+/*
+    h2 {
+        font-weight: 500;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 24px;
+        @media all and (min-width: $small) {
+            font-size: 36px;
+        }
+        @media all and (min-width: $medium) {
+            font-size: 40px;
+        }
+        @media all and (min-width: $large) {
+            font-size: 48px;
+        }
+    }
+*/
+   /*
+ .big {
+        text-align: center;
+        font-family: $adelle;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 107px;
+        font-size: 20px;
+        line-height: 30px;
+        @media all and (min-width: $medium) {
+            font-size: 26px;
+            line-height: 40px;
+        }
+        @media all and (min-width: $large) {
+            font-size: 30px;
+            line-height: 45px;
+            padding-bottom: 247px;
+        }
+    }
+*/
+    .boxs {
+        display: inline-block;
+        width: 100%;
+        vertical-align: bottom;
+        .box {
+            @media all and (min-width: $medium) {
+                float: left;
+                width: 50%;
+                padding-right: 50px;
+            }
+            &+.box {
+                @media all and (min-width: $medium) {
+                    padding-right: 0;
+                    padding-left: 50px;
+                }
+                p {
+                    box-shadow: 0 0 84px rgba(3, 232, 198, 0.15);
+                }
+            }
+            p {
+                margin: 0;
+                box-shadow: 0 0 84px rgba(97, 75, 247, 0.15);
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+                padding: 62px 15px 20px 15px;
+                height: 257px;
+                background-color: #1a1a1a;
+                line-height: 26px;
+                @media all and (min-width: $medium) {
+                    padding: 92px 25px 20px 25px;
+                    height: 357px;
+                }
+                @media all and (min-width: $large) {
+                    padding: 92px 75px 20px 75px;
+                    font-size: 24px;
+                    line-height: 31px;
+                }
+                span {
+                    display: block;
+                    font-family: $adelle;
+                    font-size: 14px;
+                    font-weight: normal;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

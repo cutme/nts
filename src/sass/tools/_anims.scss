@@ -1,0 +1,12 @@
+.anim {
+    transition: all 1s ease-out;
+
+    &--fadein {
+        opacity: 0;
+        
+        &.anim--visible {
+            opacity: 1;
+        }
+    }
+}
+

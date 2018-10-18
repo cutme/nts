@@ -1,0 +1,105 @@
+.c-numbers {
+    @extend %rel;
+
+    img {
+        margin: 0 auto;
+    }
+
+    &__col {
+        @extend %flex;
+        justify-content: space-around;
+        
+        @media screen and ( min-width: $tablet + 1px ) {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            flex-direction: column;
+        }
+        
+        @media screen and ( max-width: $tablet + px ) {
+            margin-bottom: 50px;
+        }
+              
+        p {
+            @extend %rel;
+            width: 90px;
+            text-align: center;
+            font-size: rem(18);
+            line-height: 1.3em;
+            color: #595959;
+            
+            @media screen and ( max-width: $smartphone_portrait + px ) {
+                font-size: rem(14);
+            }
+            
+            
+            &:before {
+                @extend %flex;
+                @extend %flex-xy;
+                width: 90px; height: 90px;
+                margin-bottom: 12px;
+                border-radius: 50%;
+                border: 1px solid #808080;
+                content: attr(data-num);
+                font-size: rem(24);
+                
+                @media screen and ( max-width: $tablet + px ) {
+                    margin: 0 auto 12px auto;
+                }
+                
+                @media screen and ( max-width: $smartphone_portrait + px ) {
+                    width: 70px; height: 70px;
+                    
+                }
+            }
+            
+            &:after {
+                @extend %abs;
+                @extend %abs-after;
+                top: 45px;
+                width: 130px; height: 1px;
+                background-color: #808080;
+                
+                @media screen and ( max-width: $tablet + px ) {
+                    display: none;
+                }
+            }
+        }
+        
+        &--left {
+            left: grid(30);
+            
+            p {
+                &:after {
+                    transform: translateX(100%);
+                    right: -20px;
+                }
+            }
+        }
+        
+        &--right {
+            right: grid(30);
+            
+            p {
+                &:after {
+                    transform: translateX(-100%);
+                    left: -20px;
+                }
+            }
+        }
+    }
+    
+    &__image {
+        
+        margin: 0 auto;
+        
+        @media screen and ( min-width: $smartphone + 1px  ) {
+            width: grid(750, 1140);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

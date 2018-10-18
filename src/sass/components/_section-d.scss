@@ -1,0 +1,13 @@
+.section-d {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: {
+        top: 120px;
+        bottom: 120px;
+    }
+    text-align: center;
+
+    @media all and (min-width: $medium) {
+        padding-top: 420px;
+    }
+}

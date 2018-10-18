@@ -1,0 +1,125 @@
+.o-header {
+    width: 100%;
+    text-align: center;
+    
+    &__primary,
+    &__secondary {
+        font: {
+            family: $tiempos;
+            weight: $f-medium;
+            size: rem(30);
+        }
+    }
+
+    &__primary {
+        
+        line-height: 40px;
+        padding: 20px 15px 50px 15px;
+       
+        @media all and (min-width: $small) {
+            font-size: rem(40);
+            line-height: 50px;
+        }
+        
+        @media all and (min-width: $medium) {
+            font-size: rem(50);
+            line-height: 65px;
+        }
+        
+        @media all and (min-width: $minlarge) {
+            font-size: rem(55);
+        }
+    }
+
+    &__subtitle {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: rem(12);
+    }
+
+    &__secondary {
+        margin-bottom: 60px;
+        line-height: 1.2;
+        font-size: rem(24);
+        
+        @media all and (min-width: $small) {
+            font-size: rem(36);
+        }
+        
+        @media all and (min-width: $medium) {
+            font-size: rem(40);
+        }
+
+        @media all and (min-width: $large) {
+            font-size: rem(48);
+        }
+    }
+
+    &__third {
+        margin-bottom: 1em;
+        font: {
+            family: $tiempos;
+            size: rem(22);
+            weight: $f-medium;
+        }
+        line-height: 30px;
+        
+        @media all and (min-width: $small) {
+            font-size: rem(26);
+        }
+        
+        @media all and (min-width: $medium) {
+            font-size: rem(30);
+        }
+
+        @media all and (min-width: $large) {
+            font-size: rem(36);
+        }
+    }
+
+    &__fourth {
+        max-width: 940px;
+        margin: 0 auto 70px auto;
+        font: {
+            size: rem(20);
+            weight: $f-light;
+        }
+        line-height: 30px;
+    
+        @media all and (min-width: $medium) {
+            margin: 0 auto 140px auto;
+            font-size: rem(26);
+            line-height: 40px;
+        }
+
+        @media all and (min-width: $large) {
+            font-size: rem(30);
+            line-height: 45px;
+        }
+    }
+
+    &__primary {
+        h2 {
+            line-height: 1.2;
+            padding-bottom: 50px;
+            font-size: rem(24);
+    
+            @media all and (min-width: $small) {
+                font-size: rem(36);
+            }
+            
+            @media all and (min-width: $medium) {
+                font-size: rem(40);
+            }
+
+            @media all and (min-width: $large) {
+                font-size: rem(48);
+            }
+        }
+        
+        .subtitle {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+    }
+}

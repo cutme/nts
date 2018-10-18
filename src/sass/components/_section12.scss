@@ -1,0 +1,72 @@
+.section12 {
+    background: #1a1a1a url(../img/linetop.png) no-repeat center top;
+    color: white;
+    text-align: center;
+    padding-bottom: 85px;
+    padding-top: 384px;
+    
+    @media all and (min-width: $medium) {
+        padding-bottom: 125px;
+    }
+    
+    .subtitle {
+        text-transform: uppercase;
+        padding-bottom: 14px;
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+        padding-bottom: 58px;
+    }
+    
+    .button {
+        display: inline-block;
+        padding: 1px;
+        border-radius: 60px;
+        a {
+            display: block;
+            border-radius: 60px;
+            background-color: #1a1a1a;
+            color: white;
+            font-size: 15px;
+            font-family: $adelle;
+            letter-spacing: 1px;
+            line-height: 93px;
+            width: 290px;
+            position: relative;
+            overflow: hidden;
+            padding: 1px;
+            
+            @media all and (min-width: $medium) {
+                width: 323px;
+            }
+            
+            @media all and (min-width: $large) {
+                &:hover {
+                    &:before {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            &:before {
+                content: " ";
+                position: absolute;
+                left: 0;
+                top: -120px;
+                width: 100%;
+                bottom: -120px;
+                background: transparent url(../img/progress.png) no-repeat center;
+                background-size: 100% auto;
+                transform: rotate(0deg);
+                transition: all 0.3s;
+            }
+            span {
+                position: relative;
+                background-color: #1a1a1a;
+                border-radius: 50px;
+                display: block;
+                line-height: 91px;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+body {
+	@include antialias;
+	line-height: 1.57;
+	text-rendering: optimizeSpeed;
+	font: {
+		family: $text;
+		size: #{$base-font-size}px;
+		weight: $f-light;
+	}
+	color: $c-primary;
+	
+	@media all and (min-width: $minlarge) {
+        font-size: 21px; 
+    }
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+::selection {
+	background-color: $c-black1;
+	color: white;
+}
+
+
+table { border-spacing:0; }
+td, th { padding:0; }
+img { vertical-align:bottom; }
+a img {border-width:0; }
+a { color: inherit; text-decoration:none; transition: all 0.3s; }
+input, select, textarea, button { transition: all 0.3s; }
+a:focus, a:hover {
+  outline-width: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+br {
+    @media all and (max-width: $medium) {
+        display: none;
+    }
+}

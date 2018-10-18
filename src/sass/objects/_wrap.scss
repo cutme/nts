@@ -1,0 +1,10 @@
+.o-wrap {
+	max-width: $base + 60px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 30px;
+	
+	@media screen and ( max-width: $smartphone_portrait + px ) {
+        padding: 0 10px;
+    }
+}

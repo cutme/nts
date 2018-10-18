@@ -1,0 +1,16 @@
+.section-e {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding: {
+        left: 30px;
+        right: 30px;
+    }
+    
+    @media all and (min-width: $medium) {
+        padding-top: 50px;
+    }
+
+ 
+}

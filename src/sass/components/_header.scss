@@ -1,0 +1,49 @@
+.c-header {
+    @extend %rel;
+    @extend %flex;
+    @extend %flex-xy;
+    @extend %flex-wrap;
+    flex-direction: column;
+    height: 100vh;
+    background: {
+        image: url(../img/top.jpg);
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+    }
+    padding-top: 80px;
+    text-align: center;
+    
+    @media all and (max-width: $medium) {
+        min-height: 700px;
+    }
+
+
+    &__buttons {
+        @extend %flex;
+        @extend %flex-x;
+        @extend %flex-y;
+        width: 100%;
+        padding: 50px 15px;
+        
+        @media all and (max-width: $medium) {
+            flex-direction: column;
+        }
+        
+        .o-btn {
+            margin: 0 30px;
+            
+            @media all and (max-width: $medium) {
+                margin-bottom: 20px;
+            }
+            
+            @media all and (min-width: $small){
+                width: 290px;
+            } 
+        }
+    }
+
+    .u-play {
+        margin-right: 20px;
+    }    
+}

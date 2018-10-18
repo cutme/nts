@@ -1,0 +1,20 @@
+.section-h {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: {
+        left: 30px;
+        right: 30px;
+    }
+    
+    padding-bottom: 115px;
+    padding-top: 73px;
+    text-align: center;
+
+    @media all and (min-width: $medium) {
+        padding-top: 123px;
+    }
+
+    @media all and (min-width: $large) {
+        padding-top: 173px;
+    }
+}

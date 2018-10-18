@@ -1,0 +1,126 @@
+.c-instruction {
+    @extend %flex;
+    @extend %flex-spacebetween;
+    @extend %rel;
+    max-width: 1080px;
+    margin: 0 auto;
+    
+    @media screen and ( min-width: $medium ) {
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    @media screen and ( max-width: $minmedium ) {
+        flex-wrap: wrap;
+    }
+    
+    &--center {
+       @extend %flex-y;
+    }
+    
+    &__info {
+        padding: 60px 40px;
+        
+        @media screen and ( max-width: $small ) {
+            padding: 40px 0;
+        }
+        
+        p {
+            font-size: rem(18);
+            color: #595959;
+        }
+        
+        &--abs {
+            @extend %rel;
+            background-color: white;
+
+            @media screen and ( min-width: $medium ) {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 15;
+                bottom: 0;
+                width: grid(440, 1080);
+                
+            }
+            
+            @media screen and ( max-width: $minmedium ) {
+                width: 80%;
+                margin: -60px auto 0 auto
+            }
+            
+            @media screen and ( max-width: $small ) {
+                width: 95%;
+                margin: -40px auto 0 auto;
+            }
+        }
+    }
+
+    
+    &__col {
+        @extend %rel;
+        width: grid(480);
+        height: 100%;
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+    }
+    
+    &--instruction {
+        .c-instruction__col {
+            @media screen and ( max-width: $minmedium ) {
+                width: 50%;
+                
+                &:first-of-type {
+                    padding-right: 15px;
+                }
+                
+                &:last-of-type {
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+    
+    &--version {
+        align-items: baseline;
+        
+        @media screen and ( max-width: $smartphone + px  ) {
+            flex-wrap: wrap;
+        }
+
+        .c-instruction__col {
+            width: grid(460);
+            
+            @media screen and ( min-width: $smartphone + 1px )  and ( max-width: $minmedium ) {
+                width: 50%;
+                
+                &:first-of-type {
+                    padding-right: 15px;
+                }
+                
+                &:last-of-type {
+                    padding-left: 15px;
+                }
+            }
+            
+            @media screen and ( max-width: $smartphone + px ) {
+                width: 100%;
+                
+                img {
+
+                }
+            }
+        }
+    }
+    
+    .o-sidetitle {
+        &:before {
+            top: 29px;
+            left: -52px;
+        }
+    }
+}
