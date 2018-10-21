@@ -1,24 +1,28 @@
 import InView from 'inview';
 
-document.addEventListener('DOMContentLoaded',function() {
+//document.addEventListener('DOMContentLoaded',function() {
     
-    let el = document.getElementsByClassName('anim');
+    let el = document.getElementsByClassName('aaa')[0];
     
-    for (let i = 0; i < el.length; i ++) {
-
-        let inview = InView(el[i], function(isInView, data) {
-            
-            if (isInView) {
-                if (data.elementOffsetTopInViewHeight < data.inViewHeight/2) {
-                    el[i].classList.add('anim--visible');
-                    this.destroy();
-                }
-            }
-
-        });
+   
+   
+var inview = InView(el, function(isInView, data) {
+  if (isInView) {
+    if (data.elementOffsetTopInViewHeight < data.inViewHeight/2) {
+      console.log(data.elementOffsetTopInViewHeight);
+    } else {
+      console.log('in view (bottom half)');
     }
+  } else {
+    if (data.windowScrollTop - (data.elementOffsetTop - data.inViewHeight) > data.inViewHeight) {
+      console.log('not in view (scroll up)');
+    } else {
+      console.log('not in view (scroll down)');
+    }
+  }
+});
     
     
 
 
-}, false);
+//}, false);

@@ -1,5 +1,6 @@
 .c-numbers {
     @extend %rel;
+    overflow: hidden;
 
     img {
         margin: 0 auto;
@@ -90,7 +91,6 @@
     }
     
     &__image {
-        
         margin: 0 auto;
         
         @media screen and ( min-width: $smartphone + 1px  ) {

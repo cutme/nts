@@ -8,5 +8,16 @@
             opacity: 1;
         }
     }
+    
+    &--frombottom {
+        transition: 1s ease-out;
+        transform: translate3d(0, 10%, 0);
+        opacity: 0;
+        
+        &.anim--visible {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+    }
 }
 

@@ -7,11 +7,11 @@
     width: 100%;
     height: 80px;
     background-color: white;
-    padding: 0 40px;
+    padding: 0 40px 2px 40px;
     border-bottom: 1px solid $c-gray6;
     
     @media screen and ( max-width: $medium ) {
-        padding: 0 15px;
+        padding: 0 15px 2px 15px;
     }
 
     .c-logo {

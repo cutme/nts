@@ -1,8 +1,12 @@
 .c-logo {
     @extend %abs;
-    @extend %abs-xy;
+    left: 50%;
+    top: calc(50% - 2px);
+    transform: translate(-50%,-50%);
+    
     width: 120px;
     height: 20px;
+    margin-bottom: 2px;
 
     img {
         vertical-align: baseline;

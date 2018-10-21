@@ -44,10 +44,6 @@
             @media screen and ( min-width: $medium ) {
                 padding-bottom: 0;
             }
-            
-            h2 {
-                
-            }
 
             .c-prices__profits {
                 li {
@@ -105,6 +101,99 @@
             &:after {
                 bottom: -60px;
             }
+            
+            .o-btn {
+                &--white {
+                    &:hover {
+                        background-color: $c-gray8;
+                        color: white;
+                    }
+                }
+            }
+            
+            .c-prices__num {
+                border: {
+                    top: 1px solid rgba(white, .2);
+                    bottom: 1px solid rgba(white, .2);
+                }
+                
+                input[type=number] {
+                    color: white;
+                }
+                
+                .lead {
+                    color: white;
+                }
+
+                .button {
+                    background-color: white;
+                    border: 1px solid transparent;
+                    
+                    &:after {
+                        color: $c-black2;
+                    }
+    
+                    &:hover {
+                        background-color: $c-gray8;
+                        
+                        &:after {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        
+        &--white {
+            .o-btn {
+                &--white {
+                    &:hover {
+                        background-color: $c-black2;
+                        color: white;
+                    }
+                }
+            }
+            
+            .button {
+                background-color: white;
+                border: 1px solid $c-gray11;
+
+                &:hover {
+                    background-color: $c-black2;
+                    border-color: $c-black2;
+                    
+                    &:after {
+                        color: white;
+                    }
+                }
+            }
+            
+            .c-prices__num {
+                border: {
+                    top: 1px solid $c-gray10;
+                    bottom: 1px solid $c-gray10;
+                }
+                
+                input[type=number] {
+                    color: $c-black2;
+                }
+            }
+        }
+    }
+    
+    &__num {
+        @extend %flex;
+        @extend %flex-y;
+        @extend %flex-spacebetween;
+        width: 100%;
+        white-space: nowrap;
+        margin-bottom: 55px;
+        padding: 20px 0;
+        
+        .lead {
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: rem(14);
         }
     }
     
@@ -194,6 +283,65 @@
             
         }
     }
+    
+    &__quantity {
+        @extend %flex;
+        @extend %flex-spacebetween;
+        width: 86px;
+        
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+        
+        input[type=number] {
+            width: 30px;
+            text-align: center;
+            -moz-appearance: textfield;
+            font: {
+                family: $adelle;
+                size: rem(16);
+                weight: $f-light;
+            }
+        }
+        
+        .button {
+            @extend %anim;
+            @extend %rel;
+            width: 19px; height: 19px;
+            border-radius: 50%;
+            cursor: pointer;
+            
+            &:after {
+                @extend %anim;
+                @extend %abs;
+                @extend %abs-after;
+                left: 0; top: 0;
+                width: 100%; height: 100%;
+                line-height: 19px;
+                padding: 0 0 0 1px;
+                font-size: rem(24);
+                color: $c-gray11;
+            }
+            
+            &--down {
+                &:after {
+                    content: '-';
+                }
+            }
+            
+            &--up {
+                &:after {
+                    
+                    content: '+';
+                }
+            }
+            
+            
+        }
+    }
+    
+    
 
     .o-header {
         text-align: center;

@@ -73,10 +73,9 @@
         @media all and (min-width: $medium) {
             font-size: rem(21);
         }
-
-
-        
+            
         p {
+            line-height: 1.65em;
             margin-bottom: 1.5em;
             //font-size: rem(22);
         }
@@ -93,6 +92,23 @@
         
         p {
             margin-bottom: 1.5em;
+        }
+    }
+    
+    .o-sidetitle {
+        &--left {
+            &:before {
+                left: -190px;
+                top: 26px;
+                
+                @media screen and ( max-width: $extralarge ) {
+                    left: -90px;
+                }
+                
+                @media screen and ( max-width: 1220px ) {
+                    display: none;
+                }
+            }
         }
     }
     
