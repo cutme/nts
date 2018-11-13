@@ -33,16 +33,8 @@
                 font-size: rem(14);
             }
             
-            
-            &:before {
-                @extend %flex;
-                @extend %flex-xy;
-                width: 90px; height: 90px;
-                margin-bottom: 12px;
+            &:before, &:after {
                 border-radius: 50%;
-                border: 1px solid #808080;
-                content: attr(data-num);
-                font-size: rem(24);
                 
                 @media screen and ( max-width: $tablet + px ) {
                     margin: 0 auto 12px auto;
@@ -54,15 +46,39 @@
                 }
             }
             
+            &:before {
+                display: block;
+                width: 90px; height: 90px;
+                background: transparent url(../img/progress.png) no-repeat center;
+                background-size: 200% auto;
+                margin-bottom: 12px;
+                content: '';                
+            }
+            
             &:after {
+                @extend %flex;
+                @extend %flex-xy;
                 @extend %abs;
-                @extend %abs-after;
-                top: 45px;
-                width: 130px; height: 1px;
-                background-color: #808080;
+                left: -87px; top: 1px;
+                width: 88px; height: 88px;
+                background-color: #ececec;
+                content: attr(data-num);
+                font-size: rem(24);
+            }
+            
+            span {
                 
-                @media screen and ( max-width: $tablet + px ) {
-                    display: none;
+                &:after {
+                    @extend %abs;
+                    @extend %abs-after;
+                    top: 45px;
+                    left: 110px;
+                    width: 130px; height: 1px;
+                    background-color: #808080;
+                    
+                    @media screen and ( max-width: $tablet + px ) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -72,8 +88,15 @@
             
             p {
                 &:after {
-                    transform: translateX(100%);
-                    right: -20px;
+                    
+                    @media screen and ( min-width: $tablet + 1px ) {
+                        transform: translateX(100%);
+                        right: -20px;
+                    }
+                    
+                    @media screen and ( max-width: $tablet + px ) {
+                        left: 1px;
+                    }
                 }
             }
         }
@@ -83,8 +106,15 @@
             
             p {
                 &:after {
-                    transform: translateX(-100%);
-                    left: -20px;
+                    left: 1px;
+                }
+                
+                span {
+                
+                    &:after {
+                        transform: translateX(-100%);
+                        left: -20px;
+                    }
                 }
             }
         }
@@ -94,7 +124,7 @@
         margin: 0 auto;
         
         @media screen and ( min-width: $smartphone + 1px  ) {
-            width: grid(750, 1140);
+            width: grid(920, 1140);
         }
         
         img {

@@ -1,77 +1,71 @@
 .c-details {
-
-    &__item {
-        margin-bottom: 150px;
-        
-        &:nth-child(even) {
-            figure {
-                flex-direction: row-reverse;
-            }
-        }
-        
-        @media all and (max-width: $minlarge) {
-            margin-bottom: 100px;
-            
-            &:last-of-type {
-                margin-bottom: 50px;
-            }
-        }
+    @extend %rel;
+    padding: 0 150px;
+    margin-bottom: 50px;
+    
+    @media screen and ( max-width: 1200px ) {
+        padding: 0 grid(150, 1200);
     }
     
-    .o-sidetitle {
+    @media screen and ( max-width: $tablet + px ) {
+        padding: 0;
+        margin-bottom: 0;
+    }
 
-        @media all and (min-width: $medium) {
-            width: grid(800, 1200);
-        }
-        
-        @media all and (max-width: $minmedium) {
-            margin-bottom: 50px;
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        
-    
-        &--left {
-            &:before {
-                top: 10px;
-                left: -32px;
-            }
-        }
-        
-        &--right {
-            &:before {
-                top: 12px;
-                right: -52px;
-            }
-        }
+    img {
+        max-width: 100%;
+        height: auto;
     }
     
-    figure {
+    &__pagination {
         @extend %flex;
-        @extend %flex-y;
+        @extend %flex-xy;
+        z-index: 1;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 0 35px;
         
-        @media all and (max-width: $minmedium) {
-            flex-wrap: wrap;
+        @media screen and ( min-width: $tablet + 1px ) {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }        
+        
+        @media screen and ( max-width: 1200px ) {
+            padding: 0 grid(35, 1200);
+        }
+        
+        @media screen and ( max-width: $tablet + px ) {
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .arrow {
+            @extend %anim;
+            @extend %flex;
+            @extend %flex-xy;
+            width: 80px; height: 80px;
+            border-radius: 50%;
+            font-size: rem(21);
+            cursor: pointer;
+            
+            @media screen and ( max-width: $tablet + px ) {
+                margin: 0 10px;
+            }
+            
+            @media screen and ( max-width: $smartphone + px ) {
+                width: 60px; height: 60px;
+                font-size: rem(16);
+            }
         }
     }
     
-    figcaption {
-        text-align: center;
+    &__slider {
+        @extend %rel;
         
-        @media all and (min-width: $medium) {
-            flex: 1;
-        }
-        
-        @media all and (max-width: $minmedium) {
-            width: 100%;
-        }
-
-        p {
-            font-weight: $f-light;
-            color: $c-gray8;
+        @media screen and ( max-width: 1200px ) {
+            max-width: 900px;
         }
     }
 }

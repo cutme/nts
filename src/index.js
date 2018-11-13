@@ -6,7 +6,6 @@ import 'slick-carousel';
 
 require('./js/glightbox.js');
 require('./js/gototarget.js');
-//require('./js/inview.js');
 require('./js/ismobile.js');
 require('./js/nav.js');
 require('./js/quantity.js');

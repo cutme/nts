@@ -294,8 +294,8 @@ import InView from 'inview';
                     customPaging : function(slider, i) {
                         return '<i class="dot"></i>';
                     },
-                    nextArrow: $('.next'),
-                    prevArrow: $('.prev'),
+                    nextArrow: $('.c-inside .next'),
+                    prevArrow: $('.c-inside .prev'),
                     infinite: true,
                     speed: 500,
                     fade: true,
@@ -321,7 +321,29 @@ import InView from 'inview';
     
     
     
+    // Details carousel
+    
+    let details = document.getElementsByClassName('js-details')[0];
+    
+    if (details) {
 
+        let inview = InView(slider, function(isInView, data) {
+            
+            if (data.elementOffsetTopInViewHeight < data.inViewHeight - 100) {
+            
+                $('.js-details').slick({
+                    autoplay: true,
+                    nextArrow: $('.c-details .next'),
+                    prevArrow: $('.c-details .prev'),
+                    infinite: true,
+                    speed: 500,
+                    adaptiveHeight: true
+                });
+
+                this.destroy();
+            }
+        });
+    }
     
 
 

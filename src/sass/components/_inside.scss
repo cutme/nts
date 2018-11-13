@@ -1,8 +1,12 @@
 .c-inside {
+    @extend %flex;
     @extend %rel;
     //max-width: 1200px;
-    background-color: #f3f3f3;
     margin: 0 auto;
+    
+    @media screen and ( max-width: $tablet_portrait + px) {
+        flex-wrap: wrap;
+    }
     
     img {
         max-width: 100%;
@@ -10,13 +14,14 @@
     }
 
     &__description {
+        margin-bottom: 20px;
         min-height: 100px;
         
-        @media screen and ( min-width: $medium ) {
+        @media screen and ( min-width: $tablet_portrait + 1px ) {
             min-height: 130px;
         }
         
-        @media screen and ( max-width: $minmedium ) {
+        @media screen and ( max-width: $tablet_portrait + px ) {
             padding: 0 20px;
         }
         
@@ -29,7 +34,6 @@
         @extend %flex;
         @extend %flex-xy;
         width: 90px; height: 90px;
-        border: 1px solid #808080;
         border-radius: 50%;
         margin: 0 auto 40px auto;
         font-size: rem(24);
@@ -47,10 +51,6 @@
     &__pagination {
         @extend %flex;
         @extend %flex-xy;
-        
-        @media screen and ( max-width: $minmedium ) {
-            margin-bottom: 20px;
-        }
 
         .arrow {
             @extend %anim;
@@ -116,12 +116,73 @@
         }
     }
     
+    &__photos {
+        width: 780px;
+        
+        @media screen and ( max-width: 1260px) {
+            width: grid(780, 1200);
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px) {
+            width: 100%;
+        }
+        
+        ul {
+            display: flex !important;
+            @extend %flex-wrap;
+            width: 100%;
+            height: 100%;
+            
+            li {
+                &:first-child {
+                    margin-bottom: 20px;
+                    
+                    @media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $large1) {
+                        margin-bottom: grid(20, 1260);
+                    }
+                    
+                    @media screen and ( max-width: $tablet_portrait + px) {
+                        margin-bottom: 10px; 
+                    }
+                
+                }
+
+            }
+        }
+    }
+    
     &__text {
+        @extend %flex;
         @extend %flex-wrap;
         flex-direction: column;
         justify-content: center;        
+        width: 400px;
+        background-color: #ececec;
+        padding: 0 40px;
         
-        @media screen and ( min-width: $medium ) {
+        @media screen and ( max-width: 1260px) {
+            width: grid(400, 1200);
+        }
+        
+        @media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $large1) {
+            margin-right: grid(20, 1260);
+            padding: 20px grid(40, 1260);
+        }
+        
+        @media screen and ( min-width: $tablet_portrait + 1px ) {
+            margin-right: 20px;
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px) {
+            width: 100%;
+            padding: 30px 20px;
+            margin-bottom: 10px;
+        }
+        
+        
+
+        /*
+@media screen and ( min-width: $medium ) {
             position: absolute;
             z-index: 10;
             left: grid(45, 1200); top: 0;
@@ -134,10 +195,7 @@
             left: grid(55, 1200); top: 0;
             width: grid(360, 1200);
         }
-        
-        @media screen and ( max-width: $minmedium ) {
-            padding-top: 40px;
-        }
+*/
         
         p {
             font-size: rem(16);
@@ -153,7 +211,11 @@
         margin-bottom: .6em;
     }
        
-    
+    .o-gradient {
+        span {
+            background-color: #ececec;
+        }
+    }
     
     &:before {
         top: 25px;

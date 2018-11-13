@@ -8,6 +8,7 @@
         flex-wrap: wrap;
     }
     
+
     &:before {
         @extend %abs;
         @extend %abs-after;
@@ -22,6 +23,7 @@
         }       
     }
 
+
     &__item {
         @extend %rel;
         width: 33%;
@@ -30,26 +32,45 @@
         @media screen and ( max-width: $medium ) {
             width: 100%;
             
-            
             &:not(:last-of-type) {
                 margin-bottom: 150px;
             }
         }
         
-        
-        &:after {
+        &:after,
+        &:before {
             @extend %abs;
             @extend %abs-x;
             @extend %flex;
             @extend %flex-xy;
-            top: -140px;
-            width: 76px; height: 76px;
+        }
+        
+        &:after {
+            top: -139px;
+            width: 74px; height: 74px;
             background-color: white;
-            border: 1px solid $c-gray7;
             border-radius: 50%;
-            font-weight: $f-light;
             content: attr(data-num);
             color: $c-gray8;
+            
+            @media screen and ( max-width: $medium ) {
+                top: -109px;
+            }
+        }
+        
+        &:before {
+            @extend %abs;
+            @extend %abs-x;
+            @extend %flex;
+            @extend %flex-xy;
+            z-index: 1;
+            top: -140px;
+            width: 76px; height: 76px;            
+            background: transparent url(../img/progress.png) no-repeat center;
+            background-size: 200% auto;
+            border-radius: 50%;
+            font-weight: $f-light;
+            content: '';
             
             @media screen and ( max-width: $medium ) {
                 top: -110px;

@@ -25,5 +25,19 @@ background: {
             height: 100%;
             width: 100%;
         }
+        
+        &.o-sidetitle {
+            &:before {
+                left: 20px;
+            }
+        }
+    }
+    
+    &__placeholder {
+        @extend %abs;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
     }
 }

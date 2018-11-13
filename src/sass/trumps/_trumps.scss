@@ -19,18 +19,20 @@
 .u-play {
     @extend %rel;
     width: 30px; height: 30px;
-    background-color: $c-primary;
+    //background-color: $c-primary;
     border-radius: 50%;
     
-    &:after {
+    &:before {
         @extend %abs;
         @extend %abs-xy;
         @extend %abs-after;
+        z-index: 5;
         width: 0;
         height: 0;
         border-style: solid;
         border-width: 6.5px 0 6.5px 7px;
-        border-color: transparent transparent transparent white;
+        border-color: transparent transparent transparent $c-primary;
+        margin-left: 2px;
     }
 }
 

@@ -11,9 +11,9 @@
         position: center;
         size: cover;
     }
-    padding-top: 80px;
+    padding-top: 120px;
     text-align: center;
-    
+
     @media all and (max-width: $medium) {
         min-height: 700px;
     }
@@ -50,7 +50,9 @@
             &--white {
                 &:hover {
                     .u-play {
-                        transform: translate3d(5px, 0, 0);
+                        &:after {
+                            transform: rotate(180deg);
+                        }
                     }
                 }
             }
@@ -58,9 +60,31 @@
         
         
     }
+    
+    &__deadline {
+        padding: 70px 0 20px 0;
+        letter-spacing: .5px;
+        text-align: center;
+        font: {
+            size: rem(14);
+            weight: $f-regular;
+        }
+        color: rgba(white, .7);
+
+        span {
+            color: $c-green1;
+        }
+    }
+
+    .o-header {
+        &__primary {
+            color: white;
+        }
+    }
 
     .u-play {
         @extend %anim;
+        
         margin-right: 20px;
     }    
 }

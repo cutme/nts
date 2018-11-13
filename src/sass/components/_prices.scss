@@ -73,8 +73,10 @@
             }
             
             .c-prices__price {
-                .circle {
-                    border-color: #555;
+                .circle {                    
+                    > span {
+                        background-color: $c-black2;
+                    }
                 }
             }
            
@@ -178,6 +180,14 @@
                     color: $c-black2;
                 }
             }
+            
+            .c-prices__price {
+                .circle {                    
+                    > span {
+                        background-color: #f3f3f3;
+                    }
+                }
+            }
         }
     }
     
@@ -201,19 +211,23 @@
         @extend %rel;
         
         .circle {
-            @extend %flex;
-            @extend %flex-wrap;
-            @extend %flex-xy;
-            flex-direction: column;
+            display: block;
             width: 160px; height: 160px;
             margin: 0 auto 60px auto;
-            border: 1px solid #d2d2d2;
             border-radius: 50%;
             
-            span {
-                display: block;
-                width: 100%;
-                text-align: center;
+            > span {
+                @extend %flex;
+                @extend %flex-wrap;
+                @extend %flex-xy;
+                flex-direction: column;
+                border-radius: 50%;
+                
+                span {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
             }
             
             .price {

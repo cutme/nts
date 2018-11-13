@@ -58,6 +58,11 @@
         }
     }
     
+    .logo {
+        padding-top: 15px;
+        margin-bottom: 60px;
+    }
+    
     .normal-text {
         margin: -10px 0 55px 0;
         font: {
@@ -71,7 +76,7 @@
         }
         
         @media all and (min-width: $medium) {
-            font-size: rem(21);
+            font-size: rem(22);
         }
             
         p {
@@ -112,7 +117,18 @@
         }
     }
     
-    .c-social {
+    .c-social {        
+        
+        @media screen and ( min-width: 1401px ) {
+            position: absolute;
+            transform: translate3d(-150px, 0, 0);
+        }
+        
+        @media screen and ( max-width: 1400px ) {
+            margin-bottom: 20px;
+        }
+        
+/*
         margin-left: -7px;
         padding: 77px 0 81px 0;
         
@@ -120,11 +136,8 @@
             padding-top: 27px;
             padding-bottom: 121px;
         }
+*/
         
-        a {
-            &:hover {
-                border-color: rgba($c-black2, .5);
-            }
-        }
+        
     }
 }

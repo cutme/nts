@@ -1,0 +1,19 @@
+.section-l {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: {
+            left: 30px;
+            right: 30px;
+        }
+    
+    @media screen and ( min-width: 1201px ) {
+        
+    }
+    
+    padding-bottom: 115px;
+    text-align: center;
+
+    @media all and (min-width: $tablet_portrait + px) {
+        padding-top: 80px;
+    }
+}

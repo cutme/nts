@@ -1,0 +1,77 @@
+.c-benefits {
+
+    &__item {
+        margin-bottom: 150px;
+        
+        &:nth-child(even) {
+            figure {
+                flex-direction: row-reverse;
+            }
+        }
+        
+        @media all and (max-width: $minlarge) {
+            margin-bottom: 100px;
+            
+            &:last-of-type {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    
+    .o-sidetitle {
+
+        @media all and (min-width: $medium) {
+            width: grid(800, 1200);
+        }
+        
+        @media all and (max-width: $minmedium) {
+            margin-bottom: 50px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+    
+        &--left {
+            &:before {
+                top: 10px;
+                left: -32px;
+            }
+        }
+        
+        &--right {
+            &:before {
+                top: 12px;
+                right: -52px;
+            }
+        }
+    }
+    
+    figure {
+        @extend %flex;
+        @extend %flex-y;
+        
+        @media all and (max-width: $minmedium) {
+            flex-wrap: wrap;
+        }
+    }
+    
+    figcaption {
+        text-align: center;
+        
+        @media all and (min-width: $medium) {
+            flex: 1;
+        }
+        
+        @media all and (max-width: $minmedium) {
+            width: 100%;
+        }
+
+        p {
+            font-weight: $f-light;
+            color: $c-gray8;
+        }
+    }
+}

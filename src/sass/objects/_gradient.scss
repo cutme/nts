@@ -1,0 +1,40 @@
+.o-gradient {
+    @extend %rel;
+    padding: 1px;
+    overflow: hidden;
+
+    &:after {
+        @extend %abs;
+        @extend %abs-after;
+        left: 0;
+        top: -70px;
+        width: 100%;
+        bottom: -70px;
+        background: transparent url(../img/progress.png) no-repeat center;
+        background-size: 100% auto;
+        transform: rotate(0deg);
+        transition: all 0.3s;
+    }
+    
+    > span {
+        @extend %rel;
+        @extend %flex;
+        @extend %flex-xy;
+        @extend %flex-wrap;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border-radius: 50px;
+        padding-top: 2px;
+    }
+}
+
+a.o-gradient {
+    @media all and (min-width: $tablet + px) {
+        &:hover {
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
