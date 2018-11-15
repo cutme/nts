@@ -8,7 +8,6 @@
     }
     
     &__copy {
-        margin-bottom: 30px;
         font-size: rem(14);
         color: $c-gray3;
     }
@@ -19,6 +18,34 @@
 
             &:hover {
                 background-color: white;
+            }
+        }
+    }
+
+    &__nav {
+        margin-bottom: 30px;
+
+        li {
+            display: inline-block;
+            line-height: 1em;
+    
+            &:first-child {
+                padding-right: 9px;
+                
+                &:after {
+                    padding-left: 10px;
+                    content: '•';
+                    color: rgba($c-gray3, .5);
+                }
+            }
+        }
+        
+        a {
+            font-size: rem(14);
+            color: $c-gray3;
+            
+            &:hover {
+                color: darken($c-gray3, 20%);
             }
         }
     }

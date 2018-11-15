@@ -39,12 +39,12 @@
         
         <div class="c-header__buttons">
             <a href="#prices" class="o-btn o-btn--white js-goto">Kup teraz</a>
-            <a href="https://www.youtube.com/embed/qGo3BETCYbY?showinfo=0" class="o-btn o-btn--white js-goto js-video">
+            <a href="https://www.youtube.com/embed/4OCmTwPb6i0?showinfo=0" class="o-btn o-btn--white js-goto js-video">
                 <span class="o-gradient u-play"><span></span></span> Zobacz szczegóły
             </a>
         </div>
         
-        <p class="c-header__deadline">przedsprzedaż tylko do 13 września</p>
+        <p class="c-header__deadline">Zamów w przedsprzedaży do 7 grudnia.</p>
     </div>
     
     
@@ -117,7 +117,9 @@ Nigdy nie pracowałem na etacie. Od&nbsp;kilkunastu lat działam na własny rach
                         </p>
                         
                         <div class="logo">
-                            <img src=<%= require("./img/logo-klosinski2.svg") %> width="110" height="17" alt="Kłosiński">
+                            <a href="//klosinski.net" target="_blank" rel="noopener">
+                                <img src=<%= require("./img/logo-klosinski2.svg") %> width="110" height="17" alt="Kłosiński">
+                            </a>
                         </div>
                     </div>
 
@@ -152,7 +154,7 @@ Nigdy nie pracowałem na etacie. Od&nbsp;kilkunastu lat działam na własny rach
 
                         <iframe 
                             width="500" height="281" 
-                            src="https://www.youtube.com/embed/qGo3BETCYbY?showinfo=0" allow="autoplay; encrypted-media"></iframe>
+                            src="https://www.youtube.com/embed/4OCmTwPb6i0?showinfo=0" allow="autoplay; encrypted-media"></iframe>
 
                     </div>
                 </div>
@@ -278,7 +280,7 @@ które pomaga trzymać się planów.
                 
                 <li class="c-benefits__item">
                     <figure>
-                        <div class="o-sidetitle o-sidetitle--left anim anim--fadein" data-sidetitle="Detale">
+                        <div class="o-sidetitle o-sidetitle--right anim anim--fadein" data-sidetitle="Detale">
                             <img src=<%= require("./img/benefits-4.jpg") %> alt="" width="800" height="450">
                         </div>
 
@@ -313,15 +315,15 @@ które pomaga trzymać się planów.
 
                 <div class="c-numbers">
                     <div class="c-numbers__col c-numbers__col--left">
-                        <p data-num="168" class="anim anim--fadein"><span>stron</span></p>
+                        <p data-num="176" class="anim anim--fadein"><span>stron</span></p>
                         <p data-num="12" class="anim anim--fadein"><span>tygodni</span></p>
                         <p data-num="120" class="anim anim--fadein"><span>gramatura papieru</span></p>
                     </div>
                     
                     <div class="c-numbers__col c-numbers__col--right">
-                        <p data-num="15" class="anim anim--fadein"><span>centymetrów wysokości</span></p>
-                        <p data-num="20" class="anim anim--fadein"><span>centymetrów szerokości</span></p>
-                        <p data-num="598" class="anim anim--fadein"><span>gramów wagi</span></p>
+                        <p data-num="21" class="anim anim--fadein"><span>centymetrów wysokości</span></p>
+                        <p data-num="16" class="anim anim--fadein"><span>centymetrów szerokości</span></p>
+                        <p data-num="385" class="anim anim--fadein"><span>gramów wagi</span></p>
                     </div>
                 
                     <div class="c-numbers__image anim anim--frombottom">
@@ -351,26 +353,60 @@ które pomaga trzymać się planów.
                 <div class="c-inside__text">
                     <div class="o-gradient c-inside__num"><span class="js-slideNum">1</span></div>
                 
-                    <div class="slider js-slider-nav">
+                    <div class="slider js-slider">
                         <div>
                             <h4 class="o-header__third">Dzień tematyczny</h4>
                             
                             <div class="c-inside__description">
-                                <p>
-                                    Potrzebujesz nawyków, motywacji i&nbsp;nastawiania. Musisz złapać<br>
-                                    dobry rytm i&nbsp;się go trzymać.
-                                </p>
+                                <p>Jaki jest przewodni temat tego dnia? Na&nbsp;czym się skupisz?</p>
                             </div>                        
                         </div>
                         
                         <div>
-                            <h4 class="o-header__third">Dzień tematyczny</h4>
+                            <h4 class="o-header__third">Priorytet</h4>
                             
                             <div class="c-inside__description">
-                                <p>
-                                    Potrzebujesz nawyków, motywacji i&nbsp;nastawiania. Musisz złapać<br>
-                                    dobry rytm i&nbsp;się go trzymać.
-                                </p>
+                                <p>Jaka jest jedna rzecz, której zrobienie sprawi, że uznasz ten dzień za udany?</p>
+                            </div>                        
+                        </div>
+                        
+                        <div>
+                            <h4 class="o-header__third">Kontrola</h4>
+                            
+                            <div class="c-inside__description">
+                                <p>Co chcesz monitorować? Jakie nawyki, czynności albo zachowania chcesz kontrolować?</p>
+                            </div>                        
+                        </div>
+                        
+                        <div>
+                            <h4 class="o-header__third">Nastawienie</h4>
+                            
+                            <div class="c-inside__description">
+                                <p>Jakie masz nastawienie? Jakie jest Twoje podejście?</p>
+                            </div>                        
+                        </div>
+                        
+                        <div>
+                            <h4 class="o-header__third">Sukcesy</h4>
+                            
+                            <div class="c-inside__description">
+                                <p>Co się udało? Jakie rzeczy albo wydarzenia doceniasz?</p>
+                            </div>                        
+                        </div>
+                        
+                        <div>
+                            <h4 class="o-header__third">Wnioski</h4>
+                            
+                            <div class="c-inside__description">
+                                <p>Jakie masz spostrzeżenia i pomysły? Czego się nauczyłeś?</p>
+                            </div>                        
+                        </div>
+                        
+                        <div>
+                            <h4 class="o-header__third">Notatki</h4>
+                            
+                            <div class="c-inside__description">
+                                <p>Co chcesz zanotować? Pusta strona na&nbsp;dowolne zapiski.</p>
                             </div>                        
                         </div>
                     </div>
@@ -384,27 +420,15 @@ które pomaga trzymać się planów.
                     </div>
                 </div>
                 
-                <div class="c-inside__photos slider js-slider fade">
-                    <ul>
-                        <li>
-                            <img src=<%= require("./img/insde-11.jpg") %> alt="" width="780" height="390">
-                        </li>
-                        
-                        <li>
-                            <img src=<%= require("./img/insde-12.jpg") %> alt="" width="780" height="390">
-                        </li>
-                    </ul>
+                <ul class="c-inside__photos fade">
+                    <li>
+                        <img src=<%= require("./img/insde-11.jpg") %> alt="" width="780" height="390">
+                    </li>
                     
-                    <ul>
-                        <li>
-                            <img src=<%= require("./img/insde-11.jpg") %> alt="" width="780" height="390">
-                        </li>
-                        
-                        <li>
-                            <img src=<%= require("./img/insde-12.jpg") %> alt="" width="780" height="390">
-                        </li>
-                    </ul>
-                </div>                
+                    <li>
+                        <img src=<%= require("./img/insde-12.jpg") %> alt="" width="780" height="390">
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -443,7 +467,7 @@ które pomaga trzymać się planów.
 Opieram się na badaniach naukowych 
 i&nbsp;metodach znanych twórców. 
 Przeanalizowałem setki materiałów 
-i&nbsp;przetestowałem różne warianty. 
+i&nbsp;przetestowałem różne warianty. 
 Opowiem Ci o&nbsp;wnioskach.
                     </p>
                     
@@ -490,7 +514,7 @@ Opowiem Ci o&nbsp;wnioskach.
 
                 <h3 class="o-header__fourth">
 Podoba Ci się notes, ale wolisz mieć pełną dowolność<br> 
-i nie chcesz korzystać z mojej metody? Nie ma problemu,<br> 
+i nie chcesz korzystać z mojej metody? Nie ma problemu,<br> 
 przygotowałem też wersję bez zadruku, instrukcji i schematów.
                 </h3>
             </header>                
@@ -521,9 +545,9 @@ miejsce na własne notatki.
     
                         <p>
 Jeśli chcesz mieć pełną dowolność <br>
-i swobodę, nie potrzebujesz konkretnych <br>
+i swobodę, nie potrzebujesz konkretnych <br>
 rubryk ani mojej metody. <br>
-Zadruk w delikatne kropki. 
+Zadruk w delikatne kropki. 
                         </p>
                     </div>
                 </div>
@@ -534,13 +558,12 @@ Zadruk w delikatne kropki.
         <div class="section-j" id="prices" data-offset="80">
             <div class="container-fluid">
             <header class="o-header">
-                <h2 class="o-header__secondary">
-                    Zamów w przedsprzedaży
-                </h2>
+                <h2 class="o-header__secondary">Zamów taniej w przedsprzedaży</h2>
 
                 <h3 class="o-header__fourth">
-Jeśli złożysz zamówienie w przedsprzedaży, wysyłka jest<br> 
-darmowa! Notesy będą gotowe w pierwszym tygodniu grudnia.
+Jeśli złożysz zamówienie do 7 grudnia 2018, wysyłka N/T/S Daily oraz<br> 
+pakietu N/T/S Daily&amp;Plain jest darmowa! Notesy będą gotowe<br> 
+w połowie grudnia.
                 </h3>
             </header>
         
@@ -556,41 +579,33 @@ darmowa! Notesy będą gotowe w pierwszym tygodniu grudnia.
                         <div class="c-prices__price">
                             <div class="o-gradient circle">
                                 <span>
-                                    <span class="price">89</span>
+                                    <span class="oldprice">&nbsp;</span>
+                                    <span class="price">85</span>
                                     <span class="unit">zł</span>
                                 </span>
                             </div>
                         </div>
                         
-                        <div class="c-prices__num">
-                            <div class="lead">Ile zamawiasz?</div>
-                            
-                            <div class="c-prices__quantity js-quantity">
-                                <div class="button button--up"></div>
-                                <input type="number" min="1" max="9" step="1" value="1">
-                                <div class="button button--down"></div>
-                            </div>
-                        </div>
-                    
+                        
                         <ul class="c-prices__profits">
                             <li>
-Papierowa instrukcja z opisem<br> 
-mojej metody prowadzenia dziennika
+                                Papierowa instrukcja z opisem<br> 
+                                mojej metody prowadzenia dziennika
                             </li>
                             
                             <li>
-Szary notes na 12 tygodni<br> 
-(rubryki dziennika plus miejsce<br> 
-na własne notatki)
+                                Czarny notes na 12 tygodni<br> 
+                                (rubryki dziennika plus miejsce<br> 
+                                na własne notatki)
                             </li>
                             
                             <li>
-Zapakowany na prezent
+                                Ładnie zapakowane
                             </li>
                             
                             <li>
-Darmowa wysyłka<br> 
-w&nbsp;przedsprzedaży (Pocztex48)
+                                Darmowa wysyłka<br> 
+                                w&nbsp;przedsprzedaży (Pocztex48)
                             </li>
                         </ul>
                     </div>
@@ -611,53 +626,44 @@ w&nbsp;przedsprzedaży (Pocztex48)
                         <div class="c-prices__price">
                             <div class="o-gradient circle">
                                 <span>
-                                    <span class="price">159</span>
+                                    <span class="oldprice"><span>150</span></span>
+                                    <span class="price">140</span>
                                     <span class="unit">zł</span>
                                 </span>
                             </div>                           
                         </div>
-                        
-                        <div class="c-prices__num">
-                            <div class="lead">Ile zamawiasz?</div>
-                            
-                            <div class="c-prices__quantity js-quantity">
-                                <div class="button button--up"></div>
-                                <input type="number" min="1" max="9" step="1" value="1">
-                                <div class="button button--down"></div>
-                            </div>
-                        </div>
-                        
+
                         <ul class="c-prices__profits">
                             <li>
-Papierowa instrukcja z opisem<br> 
-mojej metody prowadzenia dziennika
+                                Papierowa instrukcja z opisem<br> 
+                                mojej metody prowadzenia dziennika
                             </li>
                             
                             <li>
-Szary notes na 12 tygodni<br> 
-(rubryki dziennika plus miejsce<br> 
-na własne notatki)
+                                Czarny notes na 12 tygodni<br> 
+                                (rubryki dziennika plus miejsce<br> 
+                                na własne notatki)
                             </li>
 
                             <li>
-Czarny notes, 168 stron<br>
-(bez rubryk, bez instrukcji, <br>
-zadruk w kropki)
+                                Szary notes, 176 stron<br>
+                                (bez rubryk, bez instrukcji, <br>
+                                zadruk w kropki)
                             </li>
                             
                             <li>
-Zapakowany na prezent
+                                Ładnie zapakowane
                             </li>
                             
                             <li>
-Darmowa wysyłka<br> 
-w&nbsp;przedsprzedaży (Pocztex48)
+                                Darmowa wysyłka<br> 
+                                w&nbsp;przedsprzedaży (Pocztex48)
                             </li>
                         </ul>
                     </div>
                     
                     <div class="c-prices__btn">
-                        <a href="https://salescrm.pl/cart/add_product/352" class="o-btn o-btn--white o-btn--outline">Kup pakiet</a>
+                        <a href="https://salescrm.pl/cart/add_product/350&351" class="o-btn o-btn--white o-btn--outline">Kup pakiet</a>
                     </div>
                 </li>
                 
@@ -672,37 +678,23 @@ w&nbsp;przedsprzedaży (Pocztex48)
                         <div class="c-prices__price">
                             <div class="o-gradient circle">
                                 <span>
+                                    <span class="oldprice">&nbsp;</span>
                                     <span class="price">69</span>
                                     <span class="unit">zł</span>
                                 </span>
-                            </div>
-                        </div>
-                        
-                        <div class="c-prices__num">
-                            <div class="lead">Ile zamawiasz?</div>
-                            
-                            <div class="c-prices__quantity js-quantity">
-                                <div class="button button--up"></div>
-                                <input type="number" min="1" max="9" step="1" value="1">
-                                <div class="button button--down"></div>
                             </div>
                         </div>
 
                         
                         <ul class="c-prices__profits">
                             <li>
-Czarny notes, 168 stron<br>
-(bez rubryk, bez instrukcji, <br>
-zadruk w kropki)
+                                Szary notes, 176 stron<br>
+                                (bez rubryk, bez instrukcji, <br>
+                                zadruk w kropki)
                             </li>
                             
                             <li>
-Zapakowany na prezent
-                            </li>
-                            
-                            <li>
-Darmowa wysyłka<br> 
-w&nbsp;przedsprzedaży (Pocztex48)
+                                Ładnie zapakowane
                             </li>
                         </ul>
                     </div>
@@ -725,58 +717,81 @@ w&nbsp;przedsprzedaży (Pocztex48)
                         
                         <ul class="list">
                             <li class="open">
-                                <h3>Czy otrzymam fakturę VAT? <span class="plus"></span></h3>
+                                <h3>Kiedy otrzymam N/T/S zamówiony w&nbsp;przedsprzedaży? <span class="plus"></span></h3>
         
                                 <div class="response">
-                                    <p>Tak, oczywiście. Pamiętaj tylko, żeby podać dane przy zakupie kursu. Zakup kursu możesz wpisać w&nbsp;koszty, dzięki temu będzie on dla Ciebie dużo tańszy.</p>
+                                    <p>Przedsprzedaż trwa do 7 grudnia. Wysyłka pierwszych zamówień rozpocznie się prawdopodobnie 10 grudnia.</p>
                                 </div>
                             </li>
                         
                             <li>
-                                <h3>Na jak długo mam dostęp do kursu? <span class="plus"></span></h3>
+                                <h3>Dlaczego warto kupić produkty w&nbsp;przedsprzedaży? <span class="plus"></span></h3>
                                 
                                 <div class="response">
-                                    <p>W wersji premium nie ma ograniczeń czasowych. W&nbsp;wersji regular otrzymujesz dostęp na 12 miesięcy.</p>
+                                    <p>Przedsprzedaż to zdecydowanie najlepsza okazja cenowa. Kupując N/T/S Daily zyskujesz darmową przesyłkę. Pakiet N/T/S Daily&Plain również wysyłamy za darmo i dodatkowo, kupując go w przedsprzedaży, zyskujesz rabat 10 zł od ceny regularnej.</p>
+                                    
+                                    <p>Nakład N/T/S jest bardzo ograniczony. Jeśli zastanawiasz się nad kupnem lub zależy Ci na otrzymaniu przesyłki przed Świętami, nie warto czekać.</p>
                                 </div>
                             </li>
                             
                             <li>
-                                <h3>Jaką formę ma kurs? <span class="plus"></span></h3>
+                                <h3>Jakie są sposoby wysyłki i płatności? <span class="plus"></span></h3>
         
                                 <div class="response">
-                                    <p>Kurs jest w formie video. Do każdej lekcji są też notatki tekstowe, jest sporo ćwiczeń i interaktywnych formularzy podusmowujących</p>
+                                    <p>Notesy wysyłamy poprzez Pocztex48 (czyli usługą kurierską Poczty Polskiej). Powinny być u Ciebie w ciągu 24-48 godzin od wysłania. O nadaniu Twojej paczki powiadomimy Cię mailowo.</p>
+                                    
+                                    <p>Możesz wybrać opcję szybkich płatności (Przelewy24) lub płatność przy odbiorze (dodatkowo płatna).</p>
                                 </div>
                             </li>
                             
                             <li>
-                                <h3>Czy kurs mogę zgrać sobie na komputer? <span class="plus"></span></h3>
+                                <h3>Ile muszę zapłacić za dostawę? <span class="plus"></span></h3>
         
                                 <div class="response">
-                                    <p>Nie, kurs jest dostępny jedynie poprzez platformę kursową.</p>
+                                    <p>W okresie przedsprzedaży koszt wysyłki N/T/S Daily i pakietu N/T/S Daily&Plain bierzemy na siebie (tylko do 7 grudnia).</p>
+                                    <p>Standardowy koszt wysyłki to 14,9 zł. Jeśli zdecydujesz się na opcję za pobraniem, musisz doliczyć 5,9 zł.</p>
+
+                                    <p>Jeśli chcesz kupić tylko N/T/S Plain, koszt wysyłki zostanie doliczony również w czasie przedsprzedaży.</p>
                                 </div>
                             </li>
                             
                             <li>
-                                <h3>Czy od razu dostaję dostęp do całego kursu? <span class="plus"></span></h3>
+                                <h3>Dlaczego muszę tak długo czekać na N/T/S kupiony w przedsprzedaży? <span class="plus"></span></h3>
         
                                 <div class="response">
-                                    <p>Tak, cały materiał jest dostępny od razu, ale przejście do kolejnej lekcji wymaga ukończenia poprzedniej.</p>
+                                    <p>Przy produkcji notesów nie szliśmy na kompromisy. Notesy są produkowane przez rodzinną polską drukarnię. Są szyte, klejone, mają tłoczone i ręcznie przyklejane okładki oraz specjalne papiery. To wszystko sprawia, że proces przygotowania Twojego N/T/S trochę trwa.</p>
                                 </div>
                             </li>
                             
                             <li>
-                                <h3>W jaki sposób otrzymam dostęp? <span class="plus"></span></h3>
+                                <h3>Czy mogę zamówić dany notes z&nbsp;inną okładką? <span class="plus"></span></h3>
         
                                 <div class="response">
-                                    <p>Po opłaceniu kursu, dane do logowania prześlę Ci od razu mailem. Dostęp do treści będzie natychmiastowy.</p>
+                                    <p>Niestety obecnie nie ma takiej możliwości. Możesz zamówić N/T/S Daily z czarną okładką lub N/T/S Plain z szarą.</p>
                                 </div>
                             </li>
                             
                             <li>
-                                <h3>Czy jest możliwość płatności w&nbsp;ratach? <span class="plus"></span></h3>
+                                <h3>Czy wysyłamy notesy za granicę? <span class="plus"></span></h3>
         
                                 <div class="response">
-                                    <p>Aktualnie nie ma takiej możliwości.</p>
+                                    <p>Niestety aktualnie nie ma możliwości wysyłki zagranicznej. Jeśli bardzo zależy Ci na otrzymaniu swojego N/T/S i mieszkasz za granicą, musisz poprosić znajomych lub rodzinę mieszkającą w&nbsp;Polsce.</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <h3>Czy notesy można kupić poza tą stroną i&nbsp;czy planujesz jakieś specjalne promocje? <span class="plus"></span></h3>
+        
+                                <div class="response">
+                                    <p>Obecnie notesy można kupić wyłącznie na naszej stronie. Nie planuję również dodatkowych obniżek i rabatów. Prawdopodobnie najkorzystniej będzie kupić notesy w&nbsp;przedsprzedaży.</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <h3>Czy otrzymam fakturę VAT (na firmę)? <span class="plus"></span></h3>
+        
+                                <div class="response">
+                                    <p>Oczywiście, wystarczy, że przy zamówieniu zaznaczysz odpowiednią opcję. Fakturę wyślemy do Ciebie mailowo.</p>
                                 </div>
                             </li>
                         </ul>
@@ -812,12 +827,26 @@ w&nbsp;przedsprzedaży (Pocztex48)
     <div class="c-footer">
     
         <div class="c-footer__logo">
-            <img src=<%= require("./img/logo-klosinski.svg") %> alt="Kłosiński" width="132" height="20">
+            <a href="//klosinski.net" target="_blank" rel="noopener">
+                <img src=<%= require("./img/logo-klosinski.svg") %> alt="Kłosiński" width="132" height="20">
+            </a>
         </div>
         
         <div class="c-footer__copy">
-            &copy;2018 Jacek Kłosiński – klosinski.net All rights reserved. 
+            &copy;2018 Jacek Kłosiński – <a href="//klosinski.net" target="_blank" rel="noopener">klosinski.net</a> All rights reserved.
         </div>
+        
+        <nav class="c-footer__nav">
+            <ul>
+                <li>
+                    <a href="https://salescrm.pl/klosinski-net/regulamin" target="_blank" rel="noopener">regulamin</a>
+                </li>
+                
+                <li>
+                    <a href="https://salescrm.pl/klosinski-net/polityka-prywatnosci" target="_blank" rel="noopener">polityka prywatności</a>
+                </li>
+            </ul>
+        </nav>
     
         <ul class="c-social">
             <li>
@@ -834,46 +863,57 @@ w&nbsp;przedsprzedaży (Pocztex48)
 
 
     <div class="popup-outer" id="contact-popup">
-      <div class="popup-inner">
-        <button class="button-close"><span>Zamknij</span></button>
-        <p class="subtitle">ZADAJ PYTANIE</p>
-        <h2>Postaram się doradzić</h2>
-        <form action="#" method="post" class="form">
-          
-          <fieldset>
-                        <input type="hidden" name="action" value="sendpopup">
-            <input type="hidden" name="tokenid" value="aca6b974456fa116">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="popupName">Imię</label>
-                  <input type="text" id="popupName" name="name" class="form-control" value="">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="popupSurName">Nazwisko</label>
-                  <input type="text" id="popupSurName" name="surname" class="form-control" value="">
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="popupEmail">Adres e-mail</label>
-              <input type="email" id="popupEmail" name="email" class="form-control" value="">
-            </div>
-            <div class="form-group">
-              <label for="popupMessage">Treść</label>
-              <textarea id="popupMessage" name="message" class="form-control"></textarea>
-            </div>
-            <p class="button">
-              <button type="submit" class="btn">WYŚLIJ</button>
-            </p>
-                      </fieldset>
-        </form>
-      </div>
+        <div class="popup-inner">
+        
+            <button class="button-close"><span>Zamknij</span></button>
+
+            <p class="subtitle">ZADAJ PYTANIE</p>
+
+            <h2>Postaram się doradzić</h2>
+
+            <form action="#" method="post" class="form">
+              
+                <fieldset>
+                    <input type="hidden" name="action" value="sendpopup">
+                    <input type="hidden" name="tokenid" value="aca6b974456fa116">
+    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="popupName">Imię</label>
+                                <input type="text" id="popupName" name="name" class="form-control" value="">
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="popupSurName">Nazwisko</label>
+                                <input type="text" id="popupSurName" name="surname" class="form-control" value="">
+                            </div>
+                        </div>
+                    </div>
+         
+                    <div class="form-group">
+                        <label for="popupEmail">Adres e-mail</label>
+                        <input type="email" id="popupEmail" name="email" class="form-control" value="">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="popupMessage">Treść</label>
+                        <textarea id="popupMessage" name="message" class="form-control"></textarea>
+                    </div>
+    
+                    <p class="button">
+                        <button type="submit" class="btn">WYŚLIJ</button>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
     </div>
 
     <div class="layer-popup"></div>
+
+
 
 </div></div>
 
@@ -893,7 +933,10 @@ w&nbsp;przedsprzedaży (Pocztex48)
 
 <div class="c-apla js-apla"></div>
 
-
+<div class="c-cookies move-out" id="cookies">
+    <div class="c-cookies__text">Wykorzystujemy pliki cookie. Szczegóły znajdziesz w&nbsp;<a href="https://salescrm.pl/klosinski-net/polityka-prywatnosci" target="_blank" rel="noopener">polityce prywatności</a>.</div>
+    <div class="c-cookies__btn js-accept">Wyrażam zgodę</div>
+</div>
 
 </body>
 </html>

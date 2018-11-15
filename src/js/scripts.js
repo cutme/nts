@@ -227,16 +227,14 @@ import InView from 'inview';
     
     $('.js-faq .col-left ul h3').click(function(){
         $(this).parent().toggleClass('open');
-    });
-    
-    
-    
+    });    
+
     $('.js-faq .col-right .btn').click(function(ev){
         ev.preventDefault();
 
         $('.layer-popup').addClass('show');
         $('#contact-popup').addClass('show');
-        $('#contact-popup').css({top: Math.max($('html').scrollTop(), $('body').scrollTop())+50});
+        //$('#contact-popup').css({top: Math.max($('html').scrollTop(), $('body').scrollTop())+50});
     });
 
     $('.popup-outer .button-close').click(function(ev){
@@ -244,23 +242,25 @@ import InView from 'inview';
         $('.popup-outer').removeClass('show');
         $('.layer-popup').removeClass('show');
     });
-    
-    
+
     $('#contact-popup .form').submit(function(ev){
-      ev.preventDefault();
-      $.ajax({
-        type: $(this).attr('method'),
-        url: $(this).attr('action'),
-        data: $(this).serialize(),
-        success: function(data)
-        {
-          var html=$('<div>');
-          html.html(data);
-          $('#contact-popup .form fieldset').html(html.find('#contact-popup .form fieldset').html());
-        }
-      });
+        ev.preventDefault();
+        alert($(this).serialize());
+        
+        $.ajax({
+            type: $(this).attr('method'),
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            success: function(data) {
+                var html=$('<div>');
+                    html.html(data);
+                    
+                    $('#contact-popup .form fieldset').html(html.find('#contact-popup .form fieldset').html());
+            }
+        });
     });
-    
+
+
     $('.small-form').submit(function(ev){
       ev.preventDefault();
       $.ajax({
@@ -296,24 +296,13 @@ import InView from 'inview';
                     },
                     nextArrow: $('.c-inside .next'),
                     prevArrow: $('.c-inside .prev'),
-                    infinite: true,
-                    speed: 500,
-                    fade: true,
-                    cssEase: 'linear',
-                    asNavFor: '.js-slider-nav'
+                    infinite: true
                 });
-                
-                $('.js-slider-nav').slick({
-                    dots: false,
-                    arrows: false,
-                    slidesToShow: 1,
-                    asNavFor: '.js-slider',
-                });
-                
-            
+
                 $('.js-slider').on('afterChange', function(event, slick, direction){
                     $('.js-slideNum').text(slick.currentSlide + 1);
                 });
+                
                 this.destroy();
             }
         });
@@ -333,6 +322,7 @@ import InView from 'inview';
             
                 $('.js-details').slick({
                     autoplay: true,
+                    autoplaySpeed: 2000,
                     nextArrow: $('.c-details .next'),
                     prevArrow: $('.c-details .prev'),
                     infinite: true,

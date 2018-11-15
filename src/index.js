@@ -4,6 +4,7 @@ import css from './sass/index.scss';
 import 'jquery';
 import 'slick-carousel';
 
+require('./js/cookies.js');
 require('./js/glightbox.js');
 require('./js/gototarget.js');
 require('./js/ismobile.js');

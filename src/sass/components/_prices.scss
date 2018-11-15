@@ -38,6 +38,25 @@
             width: 33.33%;
         }
         
+        .oldprice {
+            span {
+                @extend %rel;
+                display: inline !important;
+                font-size: rem(24);
+                
+                &:after {
+                    @extend %abs;
+                    @extend %abs-after;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate3d(-50%, -50%, 0) translate3d(0, -2px, 0);
+                    width: calc(100% + 6px);
+                    height: 3px;
+                    background-color: #ff0505;
+                }
+            }
+        }
+        
         &--black {
             background-color: $c-black2;
             
@@ -78,6 +97,10 @@
                         background-color: $c-black2;
                     }
                 }
+            }
+            
+            .oldprice {
+                color: white;
             }
            
             .price {
@@ -222,6 +245,7 @@
                 @extend %flex-xy;
                 flex-direction: column;
                 border-radius: 50%;
+                padding-bottom: 30px;
                 
                 span {
                     display: block;
@@ -281,7 +305,10 @@
             margin-bottom: 20px;
             padding-left: 40px;
             text-align: left;
-            font-size: rem(14);
+            font: {
+                size: rem(14);
+                weight: $f-regular;
+            }
             color: $c-gray3;
             
             @media screen and ( max-width: $minmedium ) {

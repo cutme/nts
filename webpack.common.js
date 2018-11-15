@@ -115,7 +115,7 @@ module.exports = {
 		    cache: false,
     		chunks: ['index'],
             template: './src/index.html',
-            minify: false
+            minify: true
 		}),
        		
 	]
